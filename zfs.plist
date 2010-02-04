@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>aclinherit</key>
+	<string>discard noallow passthrough</string>
+	<key>aclmode</key>
+	<string>discard groupmask passthrough</string>
+	<key>atime</key>
+	<string>on off</string>
+	<key>canmount</key>
+	<string>on off</string>
+	<key>checksum</key>
+	<string>on off fletcher2 fletcher4 sha256</string>
+	<key>compression</key>
+	<string>off on lzjb</string>
+	<key>copies</key>
+	<string>1 2 3</string>
+	<key>devices</key>
+	<string>on off</string>
+	<key>exec</key>
+	<string>on off</string>
+	<key>mountpoint</key>
+	<string>legacy none</string>
+	<key>quota</key>
+	<string>none</string>
+	<key>readonly</key>
+	<string>on off</string>
+	<key>recordsize</key>
+	<string>&lt;size&gt; none</string>
+	<key>reservation</key>
+	<string>&lt;size&gt;</string>
+	<key>setuid</key>
+	<string>off on</string>
+	<key>shareiscsi</key>
+	<string>off</string>
+	<key>sharenfs</key>
+	<string>off</string>
+	<key>snapdir</key>
+	<string>hidden visible</string>
+	<key>version</key>
+	<string>1 2 current</string>
+	<key>volsize</key>
+	<string>&lt;size&gt;</string>
+	<key>xattr</key>
+	<string>on off</string>
+	<key>zoned</key>
+	<string>off</string>
+</dict>
+</plist>

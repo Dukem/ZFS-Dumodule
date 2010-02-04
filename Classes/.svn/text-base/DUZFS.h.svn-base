@@ -1,0 +1,61 @@
+//
+//  DUZFS.h
+//  ZFS
+//
+//  Created by Louis on 12/10/09.
+//
+
+#import <Cocoa/Cocoa.h>
+#import "DUModule.h"
+#import "DMAsyncDelegate-Protocol.h"
+#import "DULog.h"
+#import "DUVFSEventHandler-DUPrivate.h"
+#include "ZFSSparkle.h"
+#include "TaskWrapper.h"
+#include "ZStatus.h"
+
+
+@class DUDiskController, DMEraseDisk, DMPartitionDisk, DUNamer, DUTimeEstimator;
+
+@interface DUZFS : DUModule {
+	
+//	utilityView must be connected in xib.	
+
+	
+
+}
+
+- (id)init;
+- (void)awakeFromNib;
+- (id)dataType;
+- (id)displayName;
+- (BOOL)shouldRunOnThisConfig;
+- (id)tabOrder;
+- (BOOL)displayPanelForDiskType:(int)arg1 andDisk:(id)arg2;
+- (void)Overworked:(NSString *)Header :(NSString *)Body;
+- (void)dealloc;
+
+- (void)registerForNotifications;
+
+//
+- (IBAction)AZpool:(id)sender;
+- (IBAction)RZpool:(id)sender;
+- (IBAction)EZpool:(id)sender;
+//
+-(NSString *)ZFSCommand:(NSArray *)Array :(id)sender;
+
+
+
+
+/*
+- (void)setActiveTab;
+- (void)setRunning:(BOOL)arg1;
+- (id)diskController;
+- (id)windowController;
+- (id)warnOnSwitch;
+- (BOOL)supportsContextMenuForDiskType:(int)arg1 selectedDisk:(id)arg2;
+- (void)moduleDidLoad;
+*/
+
+
+@end

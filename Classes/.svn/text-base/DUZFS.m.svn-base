@@ -1,0 +1,153 @@
+//
+//  DUZFS.m
+//  ZFS
+//
+//  Created by Louis on 12/10/09.
+//
+/* This module currently loads and is displayed as a tab, but nothing more happens. I've
+ gotten these methods using a class-dump on the DUSupport.framework & Erase.dumodule inside
+ Disk Utility. Here're the calls that Disk Utility currently makes;
+ 1 [DUZFS init];
+ 2 [DUZFS dataType];
+ 3 [DUZFS tabOrder];
+ 4 [DUZFS tabOrder];
+ 5 [DUZFS tabOrder];
+ 6 [DUZFS displayName];
+ 7 [DUZFS displayName];
+ 8 [DUZFS registerForNotifications];
+ 9 [DUZFS displayPanelForDiskType]; When disk is selected.
+
+ In the included DUSupport there are many headers, most of which are unnecessary. There are,
+ however, some zfs headers for the now extinct ZFS support. Perhaps they could be of some
+ use. Most of the headers have erroneous #imports.
+*/
+
+
+
+#import "DUZFS.h"
+@implementation DUZFS
+
+#pragma mark Essential
+-(id)init
+{
+//  [super init] causes a loop of despair.
+//  Must init other classes in xib.
+	[[ZFSSparkle alloc] init];
+	[[ZView alloc] init];
+	[[ZItem alloc] init];
+
+//  Load xib.
+	BOOL BUNDLE = [NSBundle loadNibNamed:@"ZFS" owner:self ];
+	if (!BUNDLE) {
+		NSLog(@"ZFS Nib not loading. Will not load ZFS.dumodule");
+		[self Overworked:@"ZFS could not load.":@"ZFS could not load the nib. It will not load"];
+	}
+	else {
+//		[self ZFSCommand:[NSArray arrayWithObjects:@"/usr/sbin/zpool",@"status",nil]];
+			return self;
+	}
+	return nil;
+} 
+-(void)awakeFromNib
+{
+	[self setWindowController:self];
+
+
+}
+-(id)dataType
+{
+//  Unknown Function. Requires NSString.
+	return @"ZFS";
+}
+-(BOOL)shouldRunOnThisConfig
+{
+//	Return one or doesn't load.
+	return 1;
+}
+-(id)displayName
+{
+//  Displayed Name
+	return @"ZFS";
+}
+-(id)tabOrder
+{
+// Any number above 0 will do
+	return [NSNumber numberWithInteger:100 ];
+}
+-(BOOL)displayPanelForDiskType:(int)arg1 andDisk:(id)arg2
+{
+// Might as well leave it as yes.
+	return YES;
+}
+-(BOOL)supportsContextMenuForDiskType:(int)arg1 selectedDisk:(id)arg2
+{
+	return YES;
+}
+-(void)dealloc
+{
+	[super dealloc];
+	[ZItem release];
+	[ZView release];
+	[ZCon release];
+}
+#pragma mark Called
+-(void)registerForNotifications
+{
+	NSLog(@"registerForNotifications Ran");
+	
+	
+	NSNotificationCenter *NC = [NSNotificationCenter defaultCenter];
+//  For seeing all notifications.
+//	[NC addObserver:self selector:@selector(log:) name:nil object:nil];
+	[NC addObserver:(id)self selector:@selector(loadNib	:) name:@"Current Tab" object:NULL];
+}
+-(void)Overworked:(NSString *)Header :(NSString *)Body
+{
+//	Quick notifications.
+		NSError *theError = [NSError errorWithDomain:@"" code:1 userInfo:nil];
+		NSAlert *theAlert = [NSAlert alertWithError:theError];
+		[theAlert setInformativeText:Body];
+		[theAlert setMessageText:Header];
+		[theAlert setIcon:nil];
+		[theAlert setShowsSuppressionButton:1];
+		[theAlert runModal];
+}
+
+
+#pragma mark Debug
+-(void)log:(NSNotificationCenter *)note {
+NSLog(@"note = %@", note);
+}
+
+#pragma mark Sparkle
+-(SUUpdater *)updater {
+    return [SUUpdater updaterForBundle:[NSBundle bundleForClass:[self class]]];
+}
+
+#pragma mark Cocoa
+
+-(IBAction)AZpool:(id)sender
+{
+	
+	
+}
+-(IBAction)RZpool:(id)sender
+{
+	
+	
+}
+-(IBAction)EZpool:(id)sender
+{
+	
+	
+}
+#pragma mark ZFSSupport
+
+-(NSString *)ZFSCommand:(NSArray *)Array :(id)sender
+{	TaskWrapper *status = [[TaskWrapper alloc] initWithController:sender];
+        // kick off the process asynchronously
+	NSString *output = [status startProcess:Array];
+	return output;
+}
+
+@end

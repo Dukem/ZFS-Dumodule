@@ -1,0 +1,135 @@
+//
+//  ZViewController.m
+//  ZFS
+//
+//  Created by Louis Jencka on 12/16/09.
+//  Copyright 2009 underwood. All rights reserved.
+//
+
+#import "ZStatus.h"
+
+////////////////////////////////////////////
+
+#pragma mark WindowController
+@implementation ZCon
+@synthesize collection;
+
+-(IBAction)addAction:(id)sender 
+{
+	int index = [[arrayController arrangedObjects] count];
+	[arrayController insertObject: [NSDictionary dictionaryWithObjectsAndKeys:@"Jon", @"Name",nil] atArrangedObjectIndex:index];
+}
+-(IBAction)removeAction:(id)sender 
+{
+    int index = [[arrayController arrangedObjects] count];
+    if ( index > 0) {
+	index--;
+	[arrayController removeObjectAtArrangedObjectIndex:index];    
+	}
+}
+- (void) awakeFromNib {
+    collection = [[NSMutableArray alloc] init];
+	
+	NSSize size = NSMakeSize([nscv contentSize].width, 71);
+
+	[collectionView setMinItemSize:size];
+	[collectionView setMaxItemSize:size];
+	[collectionView setMaxNumberOfColumns:1];
+	[self updateDrives];
+
+
+}
+-(void)updateDrives
+{
+	int index = [[arrayController arrangedObjects] count];
+    while ( index > 0) {
+	index--;
+	[arrayController removeObjectAtArrangedObjectIndex:index];
+	}
+//	Drives
+	NSString *list = [[DUZFS alloc] ZFSCommand:[NSArray arrayWithObjects:@"/usr/sbin/zpool",@"list",@"-H",@"-o name",nil] :self];
+	NSMutableArray *Drives = [list componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+	[Drives removeLastObject];
+
+	
+//	Health
+	NSString *Hlist = [[DUZFS alloc] ZFSCommand:[NSArray arrayWithObjects:@"/usr/sbin/zpool",@"list",@"-H",@"-o health",nil] :self];
+	NSMutableArray *Health = [Hlist componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+	[Health removeLastObject];
+
+//	Size
+	NSString *Clist = [[DUZFS alloc] ZFSCommand:[NSArray arrayWithObjects:@"/usr/sbin/zpool",@"list",@"-H",@"-o size",nil] :self];
+	NSMutableArray *Capacity = [Clist componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+	[Capacity removeLastObject];
+
+
+	
+	NSMutableArray *Pirates = [[NSMutableArray alloc] initWithCapacity:0];
+	NSUInteger indice;
+	indice = 0;
+	
+	while ([Pirates count] < ([Drives count])) {
+		
+		[Pirates addObject: [NSMutableDictionary dictionaryWithObjectsAndKeys:
+							[Drives objectAtIndex:indice], @"Name",  
+							[Health objectAtIndex:indice], @"Health",
+							[Capacity objectAtIndex:indice], @"Capacity",nil]];
+		NSLog(@"Ran");
+		indice++;
+	}
+	NSLog(@"Drives %qu",([Drives count] + [Health count]));
+	NSLog(@"Pirates %qu",[Pirates count]);
+	
+	NSRange range = NSMakeRange(0, ([Drives count]));
+	[arrayController insertObjects:Pirates atArrangedObjectIndexes:[NSIndexSet indexSetWithIndexesInRange:range]];
+}
+
+
+@end
+
+////////////////////////////////////////////
+
+#pragma mark ZCon
+@implementation ZItem
+
+-(id)copyWithZone:(NSZone *)zone 
+{
+	id result = [super copyWithZone:zone];
+	[NSBundle loadNibNamed:@"collectionView" owner:result];
+
+	return result;
+}
+- (void)setSelected:(BOOL)flag {
+	[super setSelected:	flag];
+
+	NSBox *view	= (NSBox*) [self view];
+	NSColor *color;
+	NSColor *lineColor;
+
+	if (flag) {
+		color		= [NSColor selectedControlColor];
+		lineColor	= [NSColor blackColor];
+	} else {
+		color		= [NSColor controlBackgroundColor];
+		lineColor	= [NSColor controlBackgroundColor];
+	}
+
+	[view setBorderColor:lineColor];
+	[view setFillColor:color];
+}
+
+- (void) awakeFromNib {
+	NSBox *view	= (NSBox*) [self view];
+	[view setTitlePosition:NSNoTitle];
+	[view setBoxType:NSBoxCustom];
+	[view setCornerRadius:1];
+	[view setBorderType:nil];
+}
+
+@end
+////////////////////////////////////////////
+
+#pragma mark ZView
+@implementation ZView
+
+@end

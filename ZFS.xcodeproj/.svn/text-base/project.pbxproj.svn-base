@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		800E478010D6E7DF00AD9898 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800E477F10D6E7DF00AD9898 /* Sparkle.framework */; };
+		800E479810D6E8EE00AD9898 /* VolumeIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 800E479710D6E8EE00AD9898 /* VolumeIcon.icns */; };
+		800E480410D6EDC300AD9898 /* ZFS.xib in Resources */ = {isa = PBXBuildFile; fileRef = 800E480310D6EDC300AD9898 /* ZFS.xib */; };
+		8075069E10D7011F00686CB3 /* ZFSSparkle.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E47A710D6EA5A00AD9898 /* ZFSSparkle.m */; };
+		808AD6A910D86DBA006E1C60 /* ZFS.png in Resources */ = {isa = PBXBuildFile; fileRef = 808AD6A810D86DBA006E1C60 /* ZFS.png */; };
+		808AD6EB10D86F83006E1C60 /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 800E477F10D6E7DF00AD9898 /* Sparkle.framework */; };
+		80924E9310CF34F800ED60B6 /* DUSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80924E9210CF34F800ED60B6 /* DUSupport.framework */; };
+		809A71B210D1B94C00BD2AF7 /* DUZFS.m in Sources */ = {isa = PBXBuildFile; fileRef = 809A71B110D1B94C00BD2AF7 /* DUZFS.m */; };
+		80CA0CBB10D304B500DEB1F1 /* DiskManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CA0CBA10D304B500DEB1F1 /* DiskManagement.framework */; };
+		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8055882E10D8275000BED304 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				808AD6EB10D86F83006E1C60 /* Sparkle.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCF630370AF2F00C91783 /* ZFS_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFS_Prefix.pch; sourceTree = "<group>"; };
+		800E477F10D6E7DF00AD9898 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Frameworks/Sparkle.framework; sourceTree = "<group>"; };
+		800E479710D6E8EE00AD9898 /* VolumeIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = VolumeIcon.icns; sourceTree = "<group>"; };
+		800E47A610D6EA5A00AD9898 /* ZFSSparkle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZFSSparkle.h; path = Classes/ZFSSparkle.h; sourceTree = "<group>"; };
+		800E47A710D6EA5A00AD9898 /* ZFSSparkle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZFSSparkle.m; path = Classes/ZFSSparkle.m; sourceTree = "<group>"; };
+		800E480310D6EDC300AD9898 /* ZFS.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZFS.xib; sourceTree = "<group>"; };
+		808AD6A810D86DBA006E1C60 /* ZFS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZFS.png; sourceTree = "<group>"; };
+		80924E9210CF34F800ED60B6 /* DUSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DUSupport.framework; path = "/Applications/Utilities/Disk Utility.app/Contents/Frameworks/DUSupport.framework"; sourceTree = "<absolute>"; };
+		80924E9B10CF353500ED60B6 /* CDStructures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDStructures.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/CDStructures.h"; sourceTree = "<group>"; };
+		80924E9C10CF353500ED60B6 /* DUBaseDiskListViewController-SelfTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DUBaseDiskListViewController-SelfTest.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUBaseDiskListViewController-SelfTest.h"; sourceTree = "<group>"; };
+		80924E9D10CF353500ED60B6 /* DUBaseDiskListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DUBaseDiskListViewController.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUBaseDiskListViewController.h"; sourceTree = "<group>"; };
+		80924E9E10CF353500ED60B6 /* DUBaseWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DUBaseWindowController.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUBaseWindowController.h"; sourceTree = "<group>"; };
+		80924E9F10CF353500ED60B6 /* DUBrowserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DUBrowserCell.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUBrowserCell.h"; sourceTree = "<group>"; };
+		80924EA010CF353500ED60B6 /* DUContextualMenus-private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DUContextualMenus-private.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUContextualMenus-private.h"; sourceTree = "<group>"; };
+		80924EA110CF353500ED60B6 /* DUContextualMenus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DUContextualMenus.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUContextualMenus.h"; sourceTree = "<group>"; };
+		80924EA210CF353500ED60B6 /* DUDisk-DiskImageObjectMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DUDisk-DiskImageObjectMethods.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUDisk-DiskImageObjectMethods.h"; sourceTree = "<group>"; };
+		80924EA310CF353500ED60B6 /* DUDisk-DMDisk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DUDisk-DMDisk.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUDisk-DMDisk.h"; sourceTree = "<group>"; };
+		80924EA410CF353500ED60B6 /* DUDisk-DMDiskExtended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DUDisk-DMDiskExtended.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUDisk-DMDiskExtended.h"; sourceTree = "<group>"; };
+		80924EA510CF353500ED60B6 /* DUDisk-LVMExtended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DUDisk-LVMExtended.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUDisk-LVMExtended.h"; sourceTree = "<group>"; };
+		80924EA610CF353500ED60B6 /* DUDisk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DUDisk.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUDisk.h"; sourceTree = "<group>"; };
+		80924EA710CF353500ED60B6 /* DUDiskController-DMManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DUDiskController-DMManager.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUDiskController-DMManager.h"; sourceTree = "<group>"; };
+		80924EA810CF353500ED60B6 /* DUDiskController-DMManagerExtended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DUDiskController-DMManagerExtended.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUDiskController-DMManagerExtended.h"; sourceTree = "<group>"; };
+		80924EA910CF353500ED60B6 /* DUDiskController-DUPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DUDiskController-DUPrivate.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUDiskController-DUPrivate.h"; sourceTree = "<group>"; };
+		80924EAA10CF353500ED60B6 /* DUDiskController-SelfTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DUDiskController-SelfTest.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUDiskController-SelfTest.h"; sourceTree = "<group>"; };
+		80924EAB10CF353500ED60B6 /* DUDiskController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DUDiskController.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUDiskController.h"; sourceTree = "<group>"; };
+		80924EAC10CF353500ED60B6 /* DUDiskDMDisk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DUDiskDMDisk.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUDiskDMDisk.h"; sourceTree = "<group>"; };
+		80924EAD10CF353500ED60B6 /* DUDiskListSeparator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DUDiskListSeparator.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUDiskListSeparator.h"; sourceTree = "<group>"; };
+		80924EAE10CF353500ED60B6 /* DUDiskOfflineDiskImage-_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DUDiskOfflineDiskImage-_private.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUDiskOfflineDiskImage-_private.h"; sourceTree = "<group>"; };
+		80924EAF10CF353500ED60B6 /* DUDiskOfflineDiskImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DUDiskOfflineDiskImage.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUDiskOfflineDiskImage.h"; sourceTree = "<group>"; };
+		80924EB010CF353500ED60B6 /* DUDiskOpticalDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DUDiskOpticalDevice.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUDiskOpticalDevice.h"; sourceTree = "<group>"; };
+		80924EB110CF353500ED60B6 /* DUDiskPseudoDisk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DUDiskPseudoDisk.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUDiskPseudoDisk.h"; sourceTree = "<group>"; };
+		80924EB210CF353500ED60B6 /* DUDiskSavedDiskRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DUDiskSavedDiskRepresentation.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUDiskSavedDiskRepresentation.h"; sourceTree = "<group>"; };
+		80924EB310CF353500ED60B6 /* DUDiskTransientDMDisk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DUDiskTransientDMDisk.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUDiskTransientDMDisk.h"; sourceTree = "<group>"; };
+		80924EB410CF353500ED60B6 /* DULog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DULog.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DULog.h"; sourceTree = "<group>"; };
+		80924EB510CF353500ED60B6 /* DUModule-Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DUModule-Debug.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUModule-Debug.h"; sourceTree = "<group>"; };
+		80924EB610CF353500ED60B6 /* DUModule-DUModuleMenus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DUModule-DUModuleMenus.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUModule-DUModuleMenus.h"; sourceTree = "<group>"; };
+		80924EB710CF353500ED60B6 /* DUModule-SelfTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DUModule-SelfTest.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUModule-SelfTest.h"; sourceTree = "<group>"; };
+		80924EB810CF353500ED60B6 /* DUModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DUModule.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUModule.h"; sourceTree = "<group>"; };
+		80924EB910CF353500ED60B6 /* DUModuleManager-_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DUModuleManager-_private.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUModuleManager-_private.h"; sourceTree = "<group>"; };
+		80924EBA10CF353500ED60B6 /* DUModuleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DUModuleManager.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUModuleManager.h"; sourceTree = "<group>"; };
+		80924EBB10CF353500ED60B6 /* DUNamer-_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DUNamer-_private.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUNamer-_private.h"; sourceTree = "<group>"; };
+		80924EBC10CF353500ED60B6 /* DUNamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DUNamer.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUNamer.h"; sourceTree = "<group>"; };
+		80924EBD10CF353500ED60B6 /* DUNotifierProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DUNotifierProtocol-Protocol.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUNotifierProtocol-Protocol.h"; sourceTree = "<group>"; };
+		80924EBE10CF353500ED60B6 /* DUOutlineControllerProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DUOutlineControllerProtocol-Protocol.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUOutlineControllerProtocol-Protocol.h"; sourceTree = "<group>"; };
+		80924EBF10CF353500ED60B6 /* DUOutlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DUOutlineView.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUOutlineView.h"; sourceTree = "<group>"; };
+		80924EC010CF353500ED60B6 /* DUPluginProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DUPluginProtocol-Protocol.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUPluginProtocol-Protocol.h"; sourceTree = "<group>"; };
+		80924EC110CF353500ED60B6 /* DUPreferences-_DUPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DUPreferences-_DUPrivate.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUPreferences-_DUPrivate.h"; sourceTree = "<group>"; };
+		80924EC210CF353500ED60B6 /* DUPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DUPreferences.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUPreferences.h"; sourceTree = "<group>"; };
+		80924EC310CF353500ED60B6 /* DUProgressWindowController-_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DUProgressWindowController-_private.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUProgressWindowController-_private.h"; sourceTree = "<group>"; };
+		80924EC410CF353500ED60B6 /* DUProgressWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DUProgressWindowController.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUProgressWindowController.h"; sourceTree = "<group>"; };
+		80924EC510CF353500ED60B6 /* DURebuildRAIDController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DURebuildRAIDController.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DURebuildRAIDController.h"; sourceTree = "<group>"; };
+		80924EC610CF353500ED60B6 /* DURebuildRAIDManager-_DU_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DURebuildRAIDManager-_DU_Private.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DURebuildRAIDManager-_DU_Private.h"; sourceTree = "<group>"; };
+		80924EC710CF353500ED60B6 /* DURebuildRAIDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DURebuildRAIDManager.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DURebuildRAIDManager.h"; sourceTree = "<group>"; };
+		80924EC810CF353500ED60B6 /* DUTabViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DUTabViewItem.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUTabViewItem.h"; sourceTree = "<group>"; };
+		80924EC910CF353500ED60B6 /* DUTimeEstimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DUTimeEstimator.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUTimeEstimator.h"; sourceTree = "<group>"; };
+		80924ECA10CF353500ED60B6 /* DUVFSEventHandler-DUPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DUVFSEventHandler-DUPrivate.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUVFSEventHandler-DUPrivate.h"; sourceTree = "<group>"; };
+		80924ECB10CF353500ED60B6 /* DUVFSEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DUVFSEventHandler.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUVFSEventHandler.h"; sourceTree = "<group>"; };
+		80924ECC10CF353500ED60B6 /* DUWindowControllerProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DUWindowControllerProtocol-Protocol.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUWindowControllerProtocol-Protocol.h"; sourceTree = "<group>"; };
+		80924ECD10CF353500ED60B6 /* NSBitmapImageRep-Negative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSBitmapImageRep-Negative.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/NSBitmapImageRep-Negative.h"; sourceTree = "<group>"; };
+		80924ECE10CF353500ED60B6 /* NSDictionary-ZFSXSTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary-ZFSXSTableView.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/NSDictionary-ZFSXSTableView.h"; sourceTree = "<group>"; };
+		80924ECF10CF353500ED60B6 /* NSImage-ZFSXSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSImage-ZFSXSAdditions.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/NSImage-ZFSXSAdditions.h"; sourceTree = "<group>"; };
+		80924ED010CF353500ED60B6 /* NSObject-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject-Protocol.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/NSObject-Protocol.h"; sourceTree = "<group>"; };
+		80924ED110CF353500ED60B6 /* NSSoundDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSSoundDelegate-Protocol.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/NSSoundDelegate-Protocol.h"; sourceTree = "<group>"; };
+		80924ED210CF353500ED60B6 /* NSView-KeyViewExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSView-KeyViewExtensions.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/NSView-KeyViewExtensions.h"; sourceTree = "<group>"; };
+		80924ED310CF353500ED60B6 /* NSView-SubViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSView-SubViewAdditions.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/NSView-SubViewAdditions.h"; sourceTree = "<group>"; };
+		80924ED410CF353500ED60B6 /* NSView-ViewOrdering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSView-ViewOrdering.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/NSView-ViewOrdering.h"; sourceTree = "<group>"; };
+		80924ED510CF353500ED60B6 /* NSWindowDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSWindowDelegate-Protocol.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/NSWindowDelegate-Protocol.h"; sourceTree = "<group>"; };
+		80924ED610CF353500ED60B6 /* ProgressController-Accessors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ProgressController-Accessors.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/ProgressController-Accessors.h"; sourceTree = "<group>"; };
+		80924ED710CF353500ED60B6 /* ProgressController-NSSoundDelegateMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ProgressController-NSSoundDelegateMethods.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/ProgressController-NSSoundDelegateMethods.h"; sourceTree = "<group>"; };
+		80924ED810CF353500ED60B6 /* ProgressController-NSWindowDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ProgressController-NSWindowDelegate.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/ProgressController-NSWindowDelegate.h"; sourceTree = "<group>"; };
+		80924ED910CF353500ED60B6 /* ProgressController-progressStillRunning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ProgressController-progressStillRunning.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/ProgressController-progressStillRunning.h"; sourceTree = "<group>"; };
+		80924EDA10CF353500ED60B6 /* ProgressController-SoundStuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ProgressController-SoundStuff.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/ProgressController-SoundStuff.h"; sourceTree = "<group>"; };
+		80924EDB10CF353500ED60B6 /* ProgressController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProgressController.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/ProgressController.h"; sourceTree = "<group>"; };
+		80924EDC10CF353500ED60B6 /* ProgressControllerFlippedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProgressControllerFlippedView.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/ProgressControllerFlippedView.h"; sourceTree = "<group>"; };
+		80924EDD10CF353500ED60B6 /* ProgressViewController-_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ProgressViewController-_private.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/ProgressViewController-_private.h"; sourceTree = "<group>"; };
+		80924EDE10CF353500ED60B6 /* ProgressViewController-Accessors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ProgressViewController-Accessors.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/ProgressViewController-Accessors.h"; sourceTree = "<group>"; };
+		80924EDF10CF353500ED60B6 /* ProgressViewController-Actions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ProgressViewController-Actions.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/ProgressViewController-Actions.h"; sourceTree = "<group>"; };
+		80924EE010CF353500ED60B6 /* ProgressViewController-ProgressViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ProgressViewController-ProgressViewProtocol.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/ProgressViewController-ProgressViewProtocol.h"; sourceTree = "<group>"; };
+		80924EE110CF353500ED60B6 /* ProgressViewController-SeparatorMagic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ProgressViewController-SeparatorMagic.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/ProgressViewController-SeparatorMagic.h"; sourceTree = "<group>"; };
+		80924EE210CF353500ED60B6 /* ProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProgressViewController.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/ProgressViewController.h"; sourceTree = "<group>"; };
+		80924EE310CF353500ED60B6 /* ProgressViewProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ProgressViewProtocol-Protocol.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/ProgressViewProtocol-Protocol.h"; sourceTree = "<group>"; };
+		80924EE410CF353500ED60B6 /* XFSXSCellMouseTrackingProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "XFSXSCellMouseTrackingProtocol-Protocol.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/XFSXSCellMouseTrackingProtocol-Protocol.h"; sourceTree = "<group>"; };
+		80924EE510CF353500ED60B6 /* ZFSXSImageAndTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZFSXSImageAndTextCell.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/ZFSXSImageAndTextCell.h"; sourceTree = "<group>"; };
+		80924EE610CF353500ED60B6 /* ZFSXSImageTextAndDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZFSXSImageTextAndDetailCell.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/ZFSXSImageTextAndDetailCell.h"; sourceTree = "<group>"; };
+		80924EE710CF353500ED60B6 /* ZFSXSTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZFSXSTableView.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/ZFSXSTableView.h"; sourceTree = "<group>"; };
+		80924EE810CF353500ED60B6 /* ZFSXSTextAndDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZFSXSTextAndDetailCell.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/ZFSXSTextAndDetailCell.h"; sourceTree = "<group>"; };
+		809A71B010D1B94C00BD2AF7 /* DUZFS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DUZFS.h; path = Classes/DUZFS.h; sourceTree = "<group>"; };
+		809A71B110D1B94C00BD2AF7 /* DUZFS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DUZFS.m; path = Classes/DUZFS.m; sourceTree = "<group>"; };
+		80CA0CBA10D304B500DEB1F1 /* DiskManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiskManagement.framework; path = /System/Library/PrivateFrameworks/DiskManagement.framework; sourceTree = "<absolute>"; };
+		80CA0CBF10D3064C00DEB1F1 /* DMAsyncDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DMAsyncDelegate-Protocol.h"; path = "Classes/class-dump/DUSupport/DMAsyncDelegate-Protocol.h"; sourceTree = SOURCE_ROOT; };
+		8D5B49B6048680CD000E48DA /* ZFS.dumodule */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZFS.dumodule; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D5B49B3048680CD000E48DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
+				80924E9310CF34F800ED60B6 /* DUSupport.framework in Frameworks */,
+				80CA0CBB10D304B500DEB1F1 /* DiskManagement.framework in Frameworks */,
+				800E478010D6E7DF00AD9898 /* Sparkle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* ZFS DuModule */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AFFE84173DC02AAC07 /* Classes */,
+				32C88E010371C26100C91783 /* Other Sources */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+			);
+			name = "ZFS DuModule";
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				800E480310D6EDC300AD9898 /* ZFS.xib */,
+				800E479710D6E8EE00AD9898 /* VolumeIcon.icns */,
+				808AD6A810D86DBA006E1C60 /* ZFS.png */,
+				8D5B49B7048680CD000E48DA /* Info.plist */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				80924E9A10CF353500ED60B6 /* DUSupport */,
+				800E47A610D6EA5A00AD9898 /* ZFSSparkle.h */,
+				800E47A710D6EA5A00AD9898 /* ZFSSparkle.m */,
+				809A71B010D1B94C00BD2AF7 /* DUZFS.h */,
+				809A71B110D1B94C00BD2AF7 /* DUZFS.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				800E477F10D6E7DF00AD9898 /* Sparkle.framework */,
+				80CA0CBA10D304B500DEB1F1 /* DiskManagement.framework */,
+				80924E9210CF34F800ED60B6 /* DUSupport.framework */,
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				089C167FFE841241C02AAC07 /* AppKit.framework */,
+				D2F7E65807B2D6F200F64583 /* CoreData.framework */,
+				089C1672FE841209C02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B6048680CD000E48DA /* ZFS.dumodule */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32C88E010371C26100C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF630370AF2F00C91783 /* ZFS_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		80924E9A10CF353500ED60B6 /* DUSupport */ = {
+			isa = PBXGroup;
+			children = (
+				80CA0CBF10D3064C00DEB1F1 /* DMAsyncDelegate-Protocol.h */,
+				80924E9B10CF353500ED60B6 /* CDStructures.h */,
+				80924E9C10CF353500ED60B6 /* DUBaseDiskListViewController-SelfTest.h */,
+				80924E9D10CF353500ED60B6 /* DUBaseDiskListViewController.h */,
+				80924E9E10CF353500ED60B6 /* DUBaseWindowController.h */,
+				80924E9F10CF353500ED60B6 /* DUBrowserCell.h */,
+				80924EA010CF353500ED60B6 /* DUContextualMenus-private.h */,
+				80924EA110CF353500ED60B6 /* DUContextualMenus.h */,
+				80924EA210CF353500ED60B6 /* DUDisk-DiskImageObjectMethods.h */,
+				80924EA310CF353500ED60B6 /* DUDisk-DMDisk.h */,
+				80924EA410CF353500ED60B6 /* DUDisk-DMDiskExtended.h */,
+				80924EA510CF353500ED60B6 /* DUDisk-LVMExtended.h */,
+				80924EA610CF353500ED60B6 /* DUDisk.h */,
+				80924EA710CF353500ED60B6 /* DUDiskController-DMManager.h */,
+				80924EA810CF353500ED60B6 /* DUDiskController-DMManagerExtended.h */,
+				80924EA910CF353500ED60B6 /* DUDiskController-DUPrivate.h */,
+				80924EAA10CF353500ED60B6 /* DUDiskController-SelfTest.h */,
+				80924EAB10CF353500ED60B6 /* DUDiskController.h */,
+				80924EAC10CF353500ED60B6 /* DUDiskDMDisk.h */,
+				80924EAD10CF353500ED60B6 /* DUDiskListSeparator.h */,
+				80924EAE10CF353500ED60B6 /* DUDiskOfflineDiskImage-_private.h */,
+				80924EAF10CF353500ED60B6 /* DUDiskOfflineDiskImage.h */,
+				80924EB010CF353500ED60B6 /* DUDiskOpticalDevice.h */,
+				80924EB110CF353500ED60B6 /* DUDiskPseudoDisk.h */,
+				80924EB210CF353500ED60B6 /* DUDiskSavedDiskRepresentation.h */,
+				80924EB310CF353500ED60B6 /* DUDiskTransientDMDisk.h */,
+				80924EB410CF353500ED60B6 /* DULog.h */,
+				80924EB510CF353500ED60B6 /* DUModule-Debug.h */,
+				80924EB610CF353500ED60B6 /* DUModule-DUModuleMenus.h */,
+				80924EB710CF353500ED60B6 /* DUModule-SelfTest.h */,
+				80924EB810CF353500ED60B6 /* DUModule.h */,
+				80924EB910CF353500ED60B6 /* DUModuleManager-_private.h */,
+				80924EBA10CF353500ED60B6 /* DUModuleManager.h */,
+				80924EBB10CF353500ED60B6 /* DUNamer-_private.h */,
+				80924EBC10CF353500ED60B6 /* DUNamer.h */,
+				80924EBD10CF353500ED60B6 /* DUNotifierProtocol-Protocol.h */,
+				80924EBE10CF353500ED60B6 /* DUOutlineControllerProtocol-Protocol.h */,
+				80924EBF10CF353500ED60B6 /* DUOutlineView.h */,
+				80924EC010CF353500ED60B6 /* DUPluginProtocol-Protocol.h */,
+				80924EC110CF353500ED60B6 /* DUPreferences-_DUPrivate.h */,
+				80924EC210CF353500ED60B6 /* DUPreferences.h */,
+				80924EC310CF353500ED60B6 /* DUProgressWindowController-_private.h */,
+				80924EC410CF353500ED60B6 /* DUProgressWindowController.h */,
+				80924EC510CF353500ED60B6 /* DURebuildRAIDController.h */,
+				80924EC610CF353500ED60B6 /* DURebuildRAIDManager-_DU_Private.h */,
+				80924EC710CF353500ED60B6 /* DURebuildRAIDManager.h */,
+				80924EC810CF353500ED60B6 /* DUTabViewItem.h */,
+				80924EC910CF353500ED60B6 /* DUTimeEstimator.h */,
+				80924ECA10CF353500ED60B6 /* DUVFSEventHandler-DUPrivate.h */,
+				80924ECB10CF353500ED60B6 /* DUVFSEventHandler.h */,
+				80924ECC10CF353500ED60B6 /* DUWindowControllerProtocol-Protocol.h */,
+				80924ECD10CF353500ED60B6 /* NSBitmapImageRep-Negative.h */,
+				80924ECE10CF353500ED60B6 /* NSDictionary-ZFSXSTableView.h */,
+				80924ECF10CF353500ED60B6 /* NSImage-ZFSXSAdditions.h */,
+				80924ED010CF353500ED60B6 /* NSObject-Protocol.h */,
+				80924ED110CF353500ED60B6 /* NSSoundDelegate-Protocol.h */,
+				80924ED210CF353500ED60B6 /* NSView-KeyViewExtensions.h */,
+				80924ED310CF353500ED60B6 /* NSView-SubViewAdditions.h */,
+				80924ED410CF353500ED60B6 /* NSView-ViewOrdering.h */,
+				80924ED510CF353500ED60B6 /* NSWindowDelegate-Protocol.h */,
+				80924ED610CF353500ED60B6 /* ProgressController-Accessors.h */,
+				80924ED710CF353500ED60B6 /* ProgressController-NSSoundDelegateMethods.h */,
+				80924ED810CF353500ED60B6 /* ProgressController-NSWindowDelegate.h */,
+				80924ED910CF353500ED60B6 /* ProgressController-progressStillRunning.h */,
+				80924EDA10CF353500ED60B6 /* ProgressController-SoundStuff.h */,
+				80924EDB10CF353500ED60B6 /* ProgressController.h */,
+				80924EDC10CF353500ED60B6 /* ProgressControllerFlippedView.h */,
+				80924EDD10CF353500ED60B6 /* ProgressViewController-_private.h */,
+				80924EDE10CF353500ED60B6 /* ProgressViewController-Accessors.h */,
+				80924EDF10CF353500ED60B6 /* ProgressViewController-Actions.h */,
+				80924EE010CF353500ED60B6 /* ProgressViewController-ProgressViewProtocol.h */,
+				80924EE110CF353500ED60B6 /* ProgressViewController-SeparatorMagic.h */,
+				80924EE210CF353500ED60B6 /* ProgressViewController.h */,
+				80924EE310CF353500ED60B6 /* ProgressViewProtocol-Protocol.h */,
+				80924EE410CF353500ED60B6 /* XFSXSCellMouseTrackingProtocol-Protocol.h */,
+				80924EE510CF353500ED60B6 /* ZFSXSImageAndTextCell.h */,
+				80924EE610CF353500ED60B6 /* ZFSXSImageTextAndDetailCell.h */,
+				80924EE710CF353500ED60B6 /* ZFSXSTableView.h */,
+				80924EE810CF353500ED60B6 /* ZFSXSTextAndDetailCell.h */,
+			);
+			name = DUSupport;
+			path = "../class-dump/DUSupport";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D5B49AC048680CD000E48DA /* ZFS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "ZFS" */;
+			buildPhases = (
+				8D5B49AF048680CD000E48DA /* Resources */,
+				8D5B49B1048680CD000E48DA /* Sources */,
+				8D5B49B3048680CD000E48DA /* Frameworks */,
+				8055882E10D8275000BED304 /* Copy Frameworks */,
+				80A4EA4510D6D102003F304D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZFS;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = "ZFS DuModule";
+			productReference = 8D5B49B6048680CD000E48DA /* ZFS.dumodule */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "ZFS" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 089C166AFE841209C02AAC07 /* ZFS DuModule */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D5B49AC048680CD000E48DA /* ZFS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D5B49AF048680CD000E48DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */,
+				800E479810D6E8EE00AD9898 /* VolumeIcon.icns in Resources */,
+				800E480410D6EDC300AD9898 /* ZFS.xib in Resources */,
+				808AD6A910D86DBA006E1C60 /* ZFS.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		80A4EA4510D6D102003F304D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "rm -R /Applications/Utilities/Disk\\ Utility.app/Contents/PlugIns/ZFS.dumodule; mv /Users/snow/Documents/Xcode/ZFS-DUModule/build/Release/ZFS.dumodule /Applications/Utilities/Disk\\ Utility.app/Contents/PlugIns/ZFS.dumodule";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D5B49B1048680CD000E48DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				809A71B210D1B94C00BD2AF7 /* DUZFS.m in Sources */,
+				8075069E10D7011F00686CB3 /* ZFSSparkle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB913B08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Utilities/Disk Utility.app/Contents/Frameworks\"",
+					"\"$(SRCROOT)/../class-dump\"",
+					"\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ZFS_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				OTHER_CFLAGS = "";
+				PRODUCT_NAME = ZFS;
+				WRAPPER_EXTENSION = dumodule;
+			};
+			name = Debug;
+		};
+		1DEB913C08733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Utilities/Disk Utility.app/Contents/Frameworks\"",
+					"\"$(SRCROOT)/../class-dump\"",
+					"\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ZFS_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				OTHER_CFLAGS = "";
+				PRODUCT_NAME = ZFS;
+				WRAPPER_EXTENSION = dumodule;
+			};
+			name = Release;
+		};
+		1DEB913F08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					x86_64,
+					i386,
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		1DEB914008733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					x86_64,
+					i386,
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "ZFS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913B08733D840010E9CD /* Debug */,
+				1DEB913C08733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "ZFS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913F08733D840010E9CD /* Debug */,
+				1DEB914008733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

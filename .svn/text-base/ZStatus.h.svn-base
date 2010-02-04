@@ -1,0 +1,51 @@
+//
+//  ZViewController.h
+//  ZFS
+//
+//  Created by Louis Jencka on 12/16/09.
+//  Copyright 2009 underwood. All rights reserved.
+//
+
+#import <Cocoa/Cocoa.h>
+#import "ZStatus.h"
+#import "DUZFS.h"
+#import "TaskWrapper.h"
+
+#include <math.h>
+
+@interface ZCon : NSObject {
+	IBOutlet NSCollectionView *collectionView;
+	IBOutlet NSArrayController *arrayController;
+	IBOutlet NSScrollView *nscv;
+	NSMutableArray* collection;
+
+}
+- (IBAction)addAction:(id)sender;
+- (IBAction)removeAction:(id)sender;
+
+-(void)updateDrives;
+-(void)awakeFromNib;
+
+@property (copy) NSArray* collection;
+
+@end
+////////////////////////////////////////////
+
+@interface ZItem : NSCollectionViewItem
+{
+	IBOutlet NSTextField *Name;
+	IBOutlet NSTextField *Health;
+	IBOutlet NSTextField *Capacity;
+	IBOutlet NSTextField *Used;
+	
+}
+-(id)copyWithZone:(NSZone *)zone;
+
+@end
+////////////////////////////////////////////
+
+@interface ZView : NSScrollView {
+}
+
+
+@end
