@@ -61,6 +61,13 @@
 	NSLog(@"%@",[[DUDiskController alloc] masterVisibleDiskList]);
     [outlineView registerForDraggedTypes:[NSArray arrayWithObject:AbstractTreeNodeType]];
 	[outlineView registerForDraggedTypes:[NSArray arrayWithObject:DiskInfoType]];
+
+	NSManagedObjectContext *context = [self managedObjectContext];
+	NSManagedObject        *instrument  = nil;
+	instrument = [NSEntityDescription insertNewObjectForEntityForName:@"Outline"
+                  inManagedObjectContext: context];
+	[instrument setValue:[NSString stringWithString:@"ZPool"] forKey: @"name"];	
+	[instrument setValue:[[[NSImage alloc] init] initWithContentsOfFile:[[NSBundle bundleForClass:[self class]] pathForResource:@"VolumeIcon" ofType:@"icns"]] forKey: @"image"];	
 }
 
 -(id)dataType
@@ -238,6 +245,23 @@ NSLog(@"note = %@", note);
 }
 	return 1;
 }
+/*
+-(void)eraseDisk:(id)disk
+{
+    [[DUNamer alloc] name:1 ];
+	id result_19 = [self safeName];
+	__strong const char * result_29 = [[fp8 diskIdentifier] UTF8String];
+	du_log()
+	id result_46 = [[formatTypeMenu selectedItem] representedObject];
+	[self setRunType:1 ];
+	NSBundle * result_64 = [NSBundle bundleForClass:[self class] ];
+	NSString * result_73 = [result_64 localizedStringForKey:@"Preparing to erase" value:@"" table:nil ];
+	[self logHeader:fp8 msg:result_73 withFS:result_46 withName:result_19 withMap:-2 withType:1 withOptions:0 ];
+	[self newEraseDiskDelegate];
+	UNKNOWN_RES_TYPE result_108 = [ed eraseDisk:[fp8 theDMDisk] format:result_46 name:result_19 synchronous:0 ];	
+	
+}
+ */
 #pragma mark ZPool
 - (void)removeZPool:(NSString *)zpool
 {
@@ -585,6 +609,8 @@ instrument = [NSEntityDescription insertNewObjectForEntityForName: @"Outline"
                   inManagedObjectContext: context];
 [instrument setValue:[disk displayName] forKey: @"name"];	
 [instrument setValue:[disk uncachedDisplayIcon] forKey: @"image"];	
+[instrument setValue:NO forKey: @"editable"];	
+
 }
 	else
 	{

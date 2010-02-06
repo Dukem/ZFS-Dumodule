@@ -434,7 +434,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#rm -R /Applications/Utilities/Disk\\ Utility.app/Contents/PlugIns/ZFS.dumodule; cp -R /Users/snow/Documents/Xcode/ZFS-DUModule/build/Release/ZFS.dumodule /Applications/Utilities/Disk\\ Utility.app/Contents/PlugIns/ZFS.dumodule";
+			shellScript = "rm -R /Applications/Utilities/Disk\\ Utility.app/Contents/PlugIns/ZFS.dumodule; cp -R /Users/snow/Documents/Xcode/ZFS-DUModule/build/Release/ZFS.dumodule /Applications/Utilities/Disk\\ Utility.app/Contents/PlugIns/ZFS.dumodule";
 		};
 /* End PBXShellScriptBuildPhase section */
 

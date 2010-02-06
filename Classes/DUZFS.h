@@ -17,6 +17,7 @@
 #import "DUPluginProtocol-Protocol.h"
 #import "DUDiskController.h"
 #import "DUDiskController-DUPrivate.h"
+#import "DUNamer.h"
 
 #include "ZFSSparkle.h"
 #include "ZStatus.h"
