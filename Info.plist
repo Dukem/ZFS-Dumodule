@@ -19,12 +19,14 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1b</string>
+	<string>0.2</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0b</string>
+	<string>0.2</string>
 	<key>NSPrincipalClass</key>
 	<string>DUZFS</string>
 	<key>SUFeedURL</key>
-	<string>http://code.google.com/p/maczfs/sparkle/</string>
+	<string>http://cloud.github.com/downloads/Dukem/ZFS-Dumodule/zfs.xml</string>
+	<key>SUPublicDSAKeyFile</key>
+	<string>dsa_pub.pem</string>
 </dict>
 </plist>

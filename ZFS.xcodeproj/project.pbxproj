@@ -23,6 +23,7 @@
 		8093477810EB42370092970C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089C1672FE841209C02AAC07 /* Foundation.framework */; };
 		8093BEF0111A23FF005AC76A /* No.m in Sources */ = {isa = PBXBuildFile; fileRef = 8093BEEF111A23FF005AC76A /* No.m */; };
 		809A71B210D1B94C00BD2AF7 /* DUZFS.m in Sources */ = {isa = PBXBuildFile; fileRef = 809A71B110D1B94C00BD2AF7 /* DUZFS.m */; };
+		809D95C31120CC3F00CE1D10 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 809D95C21120CC3F00CE1D10 /* dsa_pub.pem */; };
 		80B2954910FD58D70030234E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B2E33310E9435200BB7A12 /* Security.framework */; };
 		80CA0CBB10D304B500DEB1F1 /* DiskManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CA0CBA10D304B500DEB1F1 /* DiskManagement.framework */; };
 		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
@@ -144,6 +145,7 @@
 		8093BEEF111A23FF005AC76A /* No.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = No.m; sourceTree = "<group>"; };
 		809A71B010D1B94C00BD2AF7 /* DUZFS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DUZFS.h; path = Classes/DUZFS.h; sourceTree = "<group>"; };
 		809A71B110D1B94C00BD2AF7 /* DUZFS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DUZFS.m; path = Classes/DUZFS.m; sourceTree = "<group>"; };
+		809D95C21120CC3F00CE1D10 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		80B2E33310E9435200BB7A12 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
 		80CA0CBA10D304B500DEB1F1 /* DiskManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiskManagement.framework; path = /System/Library/PrivateFrameworks/DiskManagement.framework; sourceTree = "<absolute>"; };
 		80CA0CBF10D3064C00DEB1F1 /* DMAsyncDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DMAsyncDelegate-Protocol.h"; path = "Classes/class-dump/DUSupport/DMAsyncDelegate-Protocol.h"; sourceTree = SOURCE_ROOT; };
@@ -195,6 +197,7 @@
 		089C167CFE841241C02AAC07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				809D95C21120CC3F00CE1D10 /* dsa_pub.pem */,
 				801DA37D1116A81E00A525CE /* ZFS.png */,
 				806512EA1107F36C00DFBEEB /* zfs.plist */,
 				8057CBDA10DBF08300DBFBFD /* collectionView.xib */,
@@ -377,6 +380,7 @@
 				8D5B49B3048680CD000E48DA /* Frameworks */,
 				8055882E10D8275000BED304 /* Copy Frameworks */,
 				806512C61107E2AA00DFBEEB /* Run Script */,
+				809D95D41120CC7700CE1D10 /* Sparkle */,
 			);
 			buildRules = (
 			);
@@ -416,6 +420,7 @@
 				8057CBDB10DBF08300DBFBFD /* collectionView.xib in Resources */,
 				806512EB1107F36C00DFBEEB /* zfs.plist in Resources */,
 				801DA37E1116A81E00A525CE /* ZFS.png in Resources */,
+				809D95C31120CC3F00CE1D10 /* dsa_pub.pem in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +440,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "rm -R /Applications/Utilities/Disk\\ Utility.app/Contents/PlugIns/ZFS.dumodule; cp -R /Users/snow/Documents/Xcode/ZFS-DUModule/build/Release/ZFS.dumodule /Applications/Utilities/Disk\\ Utility.app/Contents/PlugIns/ZFS.dumodule";
+		};
+		809D95D41120CC7700CE1D10 /* Sparkle */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Sparkle;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -o errexit\n\n[ $BUILD_STYLE = Release ] || { echo Distribution target requires \"'Release'\" build style; false; }\n\nVERSION=$(defaults read \"$BUILT_PRODUCTS_DIR/$PROJECT_NAME.dumodule/Contents/Info\" CFBundleVersion)\nDOWNLOAD_BASE_URL=\"http://cloud.github.com/downloads/Dukem/ZFS-Dumodule\"\nRELEASENOTES_URL=\"http://cloud.github.com/downloads/Dukem/ZFS-Dumodule/release-notes.html#$VERSION\"\nARCHIVE_FILENAME=\"$PROJECT_NAME-$VERSION.zip\"\nDOWNLOAD_URL=\"$DOWNLOAD_BASE_URL/$ARCHIVE_FILENAME\"\necho $BUILT_PRODUCTS_DIR/$ARCHIVE_FILENAME\nWD=$PWD\ncd \"$BUILT_PRODUCTS_DIR\"\nrm -f \"$PROJECT_NAME\"*.zip\nditto -ck --keepParent \"$PROJECT_NAME.dumodule\" \"$ARCHIVE_FILENAME\"\nSIZE=$(stat -f %z \"$ARCHIVE_FILENAME\")\nPUBDATE=$(date +\"%a, %d %b %G %T %z\")\nSIGNATURE=$(ruby /Users/snow/Documents/Xcode/Sparkle/Extras/Signing\\ Tools/sign_update.rb \"$ARCHIVE_FILENAME\" /Volumes/keys/dsa_priv.pem )\n\ncat  <<EOF | ssh louis@underwood.ath.cx cat \">\" /Library/WebServer/Documents/Archive/zfs.xml\n\n<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rss version=\"2.0\" xmlns:sparkle=\"http://www.andymatuschak.org/xml-namepsaces/sparkle\">\n<channel>\n\t\t<item>\n\t\t\t<title>Version $VERSION</title>\n\t\t\t<sparkle:releaseNotesLink>$RELEASENOTES_URL</sparkle:releaseNotesLink>\n\t\t\t<pubDate>$PUBDATE</pubDate>\n\t\t\t<enclosure\n\t\t\t\turl=\"$DOWNLOAD_URL\"\n\t\t\t\tsparkle:version=\"$VERSION\"\n\t\t\t\ttype=\"application/octet-stream\"\n\t\t\t\tlength=\"$SIZE\"\n\t\t\t\tsparkle:dsaSignature=\"$SIGNATURE\"\n\t\t\t/>\n\t\t</item>\n</channel>\n</rss>\nEOF\n\nscp \"$HOME/Documents/Xcode/ZFS-DUModule/build/Release/$ARCHIVE_FILENAME\" louis@underwood.ath.cx:/Library/WebServer/Documents/Archive";
 		};
 /* End PBXShellScriptBuildPhase section */
 

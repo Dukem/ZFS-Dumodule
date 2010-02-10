@@ -641,7 +641,7 @@ instrument = [NSEntityDescription insertNewObjectForEntityForName: @"Outline"
 	// Retrieve the index path from the pasteboard.
 	if ([[[info draggingPasteboard] propertyListForType:DiskInfoType] count] > 0) 
 	{
-		droppedIndexPath= [NSIndexPath indexPathWithIndex:0];
+		droppedIndexPath= [NSIndexPath indexPathWithIndex:1];
 	}
 	else {
     droppedIndexPath = [NSKeyedUnarchiver unarchiveObjectWithData:[[info draggingPasteboard] dataForType:AbstractTreeNodeType]];
