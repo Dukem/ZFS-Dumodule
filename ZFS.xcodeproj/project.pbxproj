@@ -26,6 +26,7 @@
 		809D95C31120CC3F00CE1D10 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 809D95C21120CC3F00CE1D10 /* dsa_pub.pem */; };
 		80B2954910FD58D70030234E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B2E33310E9435200BB7A12 /* Security.framework */; };
 		80CA0CBB10D304B500DEB1F1 /* DiskManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CA0CBA10D304B500DEB1F1 /* DiskManagement.framework */; };
+		80DD6BC5112A5E9C004913B8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D5B49B7048680CD000E48DA /* Info.plist */; };
 		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -421,6 +422,7 @@
 				806512EB1107F36C00DFBEEB /* zfs.plist in Resources */,
 				801DA37E1116A81E00A525CE /* ZFS.png in Resources */,
 				809D95C31120CC3F00CE1D10 /* dsa_pub.pem in Resources */,
+				80DD6BC5112A5E9C004913B8 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,7 +445,7 @@
 		};
 		809D95D41120CC7700CE1D10 /* Sparkle */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputPaths = (
@@ -451,9 +453,9 @@
 			name = Sparkle;
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
-			shellScript = "set -o errexit\n\n[ $BUILD_STYLE = Release ] || { echo Distribution target requires \"'Release'\" build style; false; }\n\nVERSION=$(defaults read \"$BUILT_PRODUCTS_DIR/$PROJECT_NAME.dumodule/Contents/Info\" CFBundleVersion)\nDOWNLOAD_BASE_URL=\"http://cloud.github.com/downloads/Dukem/ZFS-Dumodule\"\nRELEASENOTES_URL=\"http://cloud.github.com/downloads/Dukem/ZFS-Dumodule/release-notes.html#$VERSION\"\nARCHIVE_FILENAME=\"$PROJECT_NAME-$VERSION.zip\"\nDOWNLOAD_URL=\"$DOWNLOAD_BASE_URL/$ARCHIVE_FILENAME\"\necho $BUILT_PRODUCTS_DIR/$ARCHIVE_FILENAME\nWD=$PWD\ncd \"$BUILT_PRODUCTS_DIR\"\nrm -f \"$PROJECT_NAME\"*.zip\nditto -ck --keepParent \"$PROJECT_NAME.dumodule\" \"$ARCHIVE_FILENAME\"\nSIZE=$(stat -f %z \"$ARCHIVE_FILENAME\")\nPUBDATE=$(date +\"%a, %d %b %G %T %z\")\nSIGNATURE=$(ruby /Users/snow/Documents/Xcode/Sparkle/Extras/Signing\\ Tools/sign_update.rb \"$ARCHIVE_FILENAME\" /Volumes/keys/dsa_priv.pem )\n\ncat  <<EOF | ssh louis@underwood.ath.cx cat \">\" /Library/WebServer/Documents/Archive/zfs.xml\n\n<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rss version=\"2.0\" xmlns:sparkle=\"http://www.andymatuschak.org/xml-namepsaces/sparkle\">\n<channel>\n\t\t<item>\n\t\t\t<title>Version $VERSION</title>\n\t\t\t<sparkle:releaseNotesLink>$RELEASENOTES_URL</sparkle:releaseNotesLink>\n\t\t\t<pubDate>$PUBDATE</pubDate>\n\t\t\t<enclosure\n\t\t\t\turl=\"$DOWNLOAD_URL\"\n\t\t\t\tsparkle:version=\"$VERSION\"\n\t\t\t\ttype=\"application/octet-stream\"\n\t\t\t\tlength=\"$SIZE\"\n\t\t\t\tsparkle:dsaSignature=\"$SIGNATURE\"\n\t\t\t/>\n\t\t</item>\n</channel>\n</rss>\nEOF\n\nscp \"$HOME/Documents/Xcode/ZFS-DUModule/build/Release/$ARCHIVE_FILENAME\" louis@underwood.ath.cx:/Library/WebServer/Documents/Archive";
+			shellScript = "set -o errexit\n\n#[ $BUILD_STYLE = Release ] || { echo Distribution target requires \"'Release'\" build style; false; }\n\nVERSION=$(defaults read \"$BUILT_PRODUCTS_DIR/$PROJECT_NAME.dumodule/Contents/Info\" CFBundleVersion)\nDOWNLOAD_BASE_URL=\"http://cloud.github.com/downloads/Dukem/ZFS-Dumodule\"\nRELEASENOTES_URL=\"http://cloud.github.com/downloads/Dukem/ZFS-Dumodule/release-notes.html#$VERSION\"\nARCHIVE_FILENAME=\"$PROJECT_NAME $VERSION.zip\"\nDOWNLOAD_URL=\"$DOWNLOAD_BASE_URL/$ARCHIVE_FILENAME\"\necho $BUILT_PRODUCTS_DIR/$ARCHIVE_FILENAME\nWD=$PWD\ncd \"$BUILT_PRODUCTS_DIR\"\nrm -f \"$PROJECT_NAME\"*.zip\nditto -ck --keepParent \"$PROJECT_NAME.dumodule\" \"$ARCHIVE_FILENAME\"\nSIZE=$(stat -f %z \"$ARCHIVE_FILENAME\")\nPUBDATE=$(date +\"%a, %d %b %G %T %z\")\nSIGNATURE=$(ruby /Users/snow/Documents/Xcode/Sparkle/Extras/Signing\\ Tools/sign_update.rb \"$ARCHIVE_FILENAME\" /Volumes/keys/dsa_priv.pem )\n\n\n# echo cat <<EOF | ssh louis@underwood.ath.cx cat \">\" /Library/WebServer/Documents/Archive/zfs.xml\n\ncat  <<EOF \n<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rss version=\"2.0\" xmlns:sparkle=\"http://www.andymatuschak.org/xml-namepsaces/sparkle\">\n<channel>\n\t\t<item>\n\t\t\t<title>Version $VERSION</title>\n\t\t\t<sparkle:releaseNotesLink>$RELEASENOTES_URL</sparkle:releaseNotesLink>\n\t\t\t<pubDate>$PUBDATE</pubDate>\n\t\t    <sparkle:minimumSystemVersion>$MACOSX_DEPLOYMENT_TARGET</sparkle:minimumSystemVersion>\n\t\t\t<enclosure\n\t\t\t\turl=\"$DOWNLOAD_URL\"\n\t\t\t\tsparkle:version=\"$VERSION\"\n\t\t\t\ttype=\"application/octet-stream\"\n\t\t\t\tlength=\"$SIZE\"\n\t\t\t\tsparkle:dsaSignature=\"$SIGNATURE\"\n\t\t\t/>\n\t\t</item>\n</channel>\n</rss>\nEOF\n\necho scp \"$HOME/Documents/Xcode/ZFS-DUModule/build/Release/$ARCHIVE_FILENAME\" louis@underwood.ath.cx:/Library/WebServer/Documents/Archive";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -496,6 +498,7 @@
 					"\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
 					"\"$(SRCROOT)\"",
 					"\"$(SRCROOT)/../../../Desktop\"",
+					"\"$(SRCROOT)/../../../Desktop/Disk Utility.app/Contents/Frameworks\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -528,12 +531,13 @@
 					"\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
 					"\"$(SRCROOT)\"",
 					"\"$(SRCROOT)/../../../Desktop\"",
+					"\"$(SRCROOT)/../../../Desktop/Disk Utility.app/Contents/Frameworks\"",
 				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ZFS_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				INSTALL_PATH = "/Applications/Utilities/Disk Utility.app/Contents/PlugIns";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -578,6 +582,51 @@
 			};
 			name = Release;
 		};
+		80E3AEA41124D0DE003359DA /* 10.5 Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc7400,
+					i386,
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = "10.5 Release";
+		};
+		80E3AEA51124D0DE003359DA /* 10.5 Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../class-dump\"",
+					"\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../../../Desktop\"",
+					"\"$(SRCROOT)/../../../Desktop/Disk Utility.app/Contents/Frameworks\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ZFS_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "/Applications/Utilities/Disk Utility.app/Contents/PlugIns";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				OTHER_CFLAGS = "";
+				PRODUCT_NAME = ZFS;
+				WRAPPER_EXTENSION = dumodule;
+			};
+			name = "10.5 Release";
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -586,6 +635,7 @@
 			buildConfigurations = (
 				1DEB913B08733D840010E9CD /* Debug */,
 				1DEB913C08733D840010E9CD /* Release */,
+				80E3AEA51124D0DE003359DA /* 10.5 Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -595,6 +645,7 @@
 			buildConfigurations = (
 				1DEB913F08733D840010E9CD /* Debug */,
 				1DEB914008733D840010E9CD /* Release */,
+				80E3AEA41124D0DE003359DA /* 10.5 Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

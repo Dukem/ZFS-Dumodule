@@ -7,6 +7,7 @@
 /* This module currently loads and is displayed as a tab, but nothing more happens. I've
  gotten these headers using a class-dump on the DUSupport.framework inside
  Disk Utility. Here're the calls that Disk Utility currently makes;
+ 
  1 [DUZFS init];
  2 [DUZFS dataType];
  3 [DUZFS tabOrder];
@@ -45,7 +46,7 @@
 		return nil;
 	}
 	if (![[[NSFileManager alloc] init] fileExistsAtPath:@"/usr/sbin/zpool"]) {
-		[self Overworked:@"ZFS could not be found.":@"Please download & install the ZFS command line tools from 'https://groups.google.com/group/zfs-macos/files'."];
+		[self Overworked:@"ZFS.kext could not be found.":@"Please download & install the ZFS command line tools from 'https://groups.google.com/group/zfs-macos/files'."];
 		 return nil;
 	}
 	else {
@@ -56,6 +57,7 @@
 } 
 -(void)awakeFromNib
 {
+
 	[self setWindowController:self];
 	NSLog(@"%@",[[DUDiskController alloc] masterDiskList]);
 	NSLog(@"%@",[[DUDiskController alloc] masterVisibleDiskList]);
@@ -68,6 +70,7 @@
                   inManagedObjectContext: context];
 	[instrument setValue:[NSString stringWithString:@"ZPool"] forKey: @"name"];	
 	[instrument setValue:[[[NSImage alloc] init] initWithContentsOfFile:[[NSBundle bundleForClass:[self class]] pathForResource:@"VolumeIcon" ofType:@"icns"]] forKey: @"image"];	
+
 }
 
 -(id)dataType
@@ -93,7 +96,6 @@
 -(BOOL)displayPanelForDiskType:(int)arg1 andDisk:(id)arg2
 {
 // Might as well leave it as yes.
-
 	return YES;
 }
 -(BOOL)supportsContextMenuForDiskType:(int)arg1 selectedDisk:(id)arg2

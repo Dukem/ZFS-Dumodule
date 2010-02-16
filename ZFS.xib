@@ -12,6 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
+			<integer value="88"/>
 			<integer value="6267"/>
 			<integer value="778"/>
 		</object>
@@ -79,7 +80,7 @@
 				<bool key="NSClearsFilterPredicateOnInsertion">YES</bool>
 			</object>
 			<object class="NSCustomView" id="19520016">
-				<nil key="NSNextResponder"/>
+				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">274</int>
 				<object class="NSMutableArray" key="NSSubviews">
 					<bool key="EncodedWithXMLCoder">YES</bool>
@@ -305,7 +306,7 @@
 										<object class="NSButton" id="937391441">
 											<reference key="NSNextResponder" ref="371526801"/>
 											<int key="NSvFlags">265</int>
-											<string key="NSFrame">{{319, 183}, {96, 19}}</string>
+											<string key="NSFrame">{{319, 175}, {96, 25}}</string>
 											<reference key="NSSuperview" ref="371526801"/>
 											<int key="NSViewLayerContentsRedrawPolicy">2</int>
 											<bool key="NSEnabled">YES</bool>
@@ -313,14 +314,10 @@
 												<int key="NSCellFlags">-2080244224</int>
 												<int key="NSCellFlags2">134217728</int>
 												<string key="NSContents">Load Kext!</string>
-												<object class="NSFont" key="NSSupport">
-													<string key="NSName">LucidaGrande-Bold</string>
-													<double key="NSSize">12</double>
-													<int key="NSfFlags">16</int>
-												</object>
+												<reference key="NSSupport" ref="18052652"/>
 												<reference key="NSControlView" ref="937391441"/>
-												<int key="NSButtonFlags">-1228128001</int>
-												<int key="NSButtonFlags2">173</int>
+												<int key="NSButtonFlags">-2038152961</int>
+												<int key="NSButtonFlags2">163</int>
 												<string key="NSAlternateContents"/>
 												<string key="NSKeyEquivalent"/>
 												<int key="NSPeriodicDelay">400</int>
@@ -457,6 +454,7 @@
 					</object>
 				</object>
 				<string key="NSFrameSize">{478, 369}</string>
+				<reference key="NSSuperview"/>
 				<int key="NSViewLayerContentsRedrawPolicy">2</int>
 				<string key="NSClassName">NSView</string>
 			</object>
@@ -1134,7 +1132,7 @@
 												</object>
 												<object class="NSImageCell" key="NSDataCell" id="563424046">
 													<int key="NSCellFlags">67239424</int>
-													<int key="NSCellFlags2">0</int>
+													<int key="NSCellFlags2">33554432</int>
 													<reference key="NSSupport" ref="18052652"/>
 													<int key="NSAlign">0</int>
 													<int key="NSScale">0</int>
@@ -4765,14 +4763,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
-						<string key="label">kextLoadButton</string>
-						<reference key="source" ref="49416625"/>
-						<reference key="destination" ref="937391441"/>
-					</object>
-					<int key="connectionID">662</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
 						<string key="label">kextText</string>
 						<reference key="source" ref="49416625"/>
 						<reference key="destination" ref="819155811"/>
@@ -6012,6 +6002,26 @@
 						</object>
 					</object>
 					<int key="connectionID">6311</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">hidden: values.UIEnabled</string>
+						<reference key="source" ref="937391441"/>
+						<reference key="destination" ref="685815887"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="937391441"/>
+							<reference key="NSDestination" ref="685815887"/>
+							<string key="NSLabel">hidden: values.UIEnabled</string>
+							<string key="NSBinding">hidden</string>
+							<string key="NSKeyPath">values.UIEnabled</string>
+							<object class="NSDictionary" key="NSOptions">
+								<string key="NS.key.0">NSValueTransformerName</string>
+								<string key="NS.object.0">NSIsNil</string>
+							</object>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">6332</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -9570,7 +9580,7 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{378, 368}, {432, 316}}</string>
+					<string>{{376, 363}, {432, 316}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<real value="1"/>
 					<reference ref="342512633"/>
@@ -9711,7 +9721,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">6325</int>
+			<int key="maxID">6332</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
