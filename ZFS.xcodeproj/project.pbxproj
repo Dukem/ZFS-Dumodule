@@ -142,8 +142,8 @@
 		80924EE610CF353500ED60B6 /* ZFSXSImageTextAndDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZFSXSImageTextAndDetailCell.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/ZFSXSImageTextAndDetailCell.h"; sourceTree = "<group>"; };
 		80924EE710CF353500ED60B6 /* ZFSXSTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZFSXSTableView.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/ZFSXSTableView.h"; sourceTree = "<group>"; };
 		80924EE810CF353500ED60B6 /* ZFSXSTextAndDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZFSXSTextAndDetailCell.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/ZFSXSTextAndDetailCell.h"; sourceTree = "<group>"; };
-		8093BEEE111A23FF005AC76A /* No.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = No.h; sourceTree = "<group>"; };
-		8093BEEF111A23FF005AC76A /* No.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = No.m; sourceTree = "<group>"; };
+		8093BEEE111A23FF005AC76A /* No.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = No.h; path = Classes/No.h; sourceTree = "<group>"; };
+		8093BEEF111A23FF005AC76A /* No.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = No.m; path = Classes/No.m; sourceTree = "<group>"; };
 		809A71B010D1B94C00BD2AF7 /* DUZFS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DUZFS.h; path = Classes/DUZFS.h; sourceTree = "<group>"; };
 		809A71B110D1B94C00BD2AF7 /* DUZFS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DUZFS.m; path = Classes/DUZFS.m; sourceTree = "<group>"; };
 		809D95C21120CC3F00CE1D10 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };

@@ -4,8 +4,8 @@
 //
 //  Created by Louis on 12/10/09.
 //  Copyright 2009 underwood. All rights reserved.
-/* This module currently loads and is displayed as a tab, but nothing more happens. I've
- gotten these headers using a class-dump on the DUSupport.framework inside
+/* 
+ I've gotten these headers using a class-dump on the DUSupport.framework inside
  Disk Utility. Here're the calls that Disk Utility currently makes;
  
  1 [DUZFS init];
