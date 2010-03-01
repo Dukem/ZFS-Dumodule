@@ -16,6 +16,7 @@
 		805623351100FCE30037922E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 805623341100FCE30037922E /* QuartzCore.framework */; };
 		8057C97710D9D81B00DBFBFD /* ZStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 8057C97610D9D81B00DBFBFD /* ZStatus.m */; };
 		8057CBDB10DBF08300DBFBFD /* collectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8057CBDA10DBF08300DBFBFD /* collectionView.xib */; };
+		805DFE2E113C6B5B00F09A2F /* DUDisk-ZFSDisk.m in Sources */ = {isa = PBXBuildFile; fileRef = 805DFE2D113C6B5B00F09A2F /* DUDisk-ZFSDisk.m */; };
 		8065120B1107DFAC00DFBEEB /* DUSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 804DCCB710DD5B9200835DE0 /* DUSupport.framework */; };
 		806512EB1107F36C00DFBEEB /* zfs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 806512EA1107F36C00DFBEEB /* zfs.plist */; };
 		8075069E10D7011F00686CB3 /* ZFSSparkle.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E47A710D6EA5A00AD9898 /* ZFSSparkle.m */; };
@@ -63,6 +64,8 @@
 		8057C97510D9D81B00DBFBFD /* ZStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZStatus.h; path = Classes/ZStatus.h; sourceTree = "<group>"; };
 		8057C97610D9D81B00DBFBFD /* ZStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZStatus.m; path = Classes/ZStatus.m; sourceTree = "<group>"; };
 		8057CBDA10DBF08300DBFBFD /* collectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = collectionView.xib; sourceTree = "<group>"; };
+		805DFE2C113C6B5B00F09A2F /* DUDisk-ZFSDisk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DUDisk-ZFSDisk.h"; sourceTree = "<group>"; };
+		805DFE2D113C6B5B00F09A2F /* DUDisk-ZFSDisk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DUDisk-ZFSDisk.m"; sourceTree = "<group>"; };
 		806512EA1107F36C00DFBEEB /* zfs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = zfs.plist; sourceTree = "<group>"; };
 		80924E9B10CF353500ED60B6 /* CDStructures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDStructures.h; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/CDStructures.h"; sourceTree = "<group>"; };
 		80924E9C10CF353500ED60B6 /* DUBaseDiskListViewController-SelfTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DUBaseDiskListViewController-SelfTest.h"; path = "../../ZFS-DUModule/Classes/class-dump/DUSupport/DUBaseDiskListViewController-SelfTest.h"; sourceTree = "<group>"; };
@@ -218,6 +221,8 @@
 				809A71B110D1B94C00BD2AF7 /* DUZFS.m */,
 				8057C97510D9D81B00DBFBFD /* ZStatus.h */,
 				8057C97610D9D81B00DBFBFD /* ZStatus.m */,
+				805DFE2C113C6B5B00F09A2F /* DUDisk-ZFSDisk.h */,
+				805DFE2D113C6B5B00F09A2F /* DUDisk-ZFSDisk.m */,
 				80BDEFDF111600C0004AEAAF /* CoreZFS */,
 				80BDEF281115F7AE004AEAAF /* Other */,
 			);
@@ -441,11 +446,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "rm -R /Applications/Utilities/Disk\\ Utility.app/Contents/PlugIns/ZFS.dumodule; cp -R /Users/snow/Documents/Xcode/ZFS-DUModule/build/Release/ZFS.dumodule /Applications/Utilities/Disk\\ Utility.app/Contents/PlugIns/ZFS.dumodule";
+			shellScript = "rm -R /Applications/Utilities/Disk\\ Utility.app/Contents/PlugIns/ZFS.dumodule; cp -R /Users/snow/Documents/Xcode/ZFS-DUModule/build/$BUILD_STYLE/ZFS.dumodule /Applications/Utilities/Disk\\ Utility.app/Contents/PlugIns/ZFS.dumodule";
 		};
 		809D95D41120CC7700CE1D10 /* Sparkle */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
@@ -453,7 +458,7 @@
 			name = Sparkle;
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -o errexit\n\n#[ $BUILD_STYLE = Release ] || { echo Distribution target requires \"'Release'\" build style; false; }\n\nVERSION=$(defaults read \"$BUILT_PRODUCTS_DIR/$PROJECT_NAME.dumodule/Contents/Info\" CFBundleVersion)\nDOWNLOAD_BASE_URL=\"http://cloud.github.com/downloads/Dukem/ZFS-Dumodule\"\nRELEASENOTES_URL=\"http://cloud.github.com/downloads/Dukem/ZFS-Dumodule/release-notes.html#$VERSION\"\nARCHIVE_FILENAME=\"$PROJECT_NAME $VERSION.zip\"\nDOWNLOAD_URL=\"$DOWNLOAD_BASE_URL/$ARCHIVE_FILENAME\"\necho $BUILT_PRODUCTS_DIR/$ARCHIVE_FILENAME\nWD=$PWD\ncd \"$BUILT_PRODUCTS_DIR\"\nrm -f \"$PROJECT_NAME\"*.zip\nditto -ck --keepParent \"$PROJECT_NAME.dumodule\" \"$ARCHIVE_FILENAME\"\nSIZE=$(stat -f %z \"$ARCHIVE_FILENAME\")\nPUBDATE=$(date +\"%a, %d %b %G %T %z\")\nSIGNATURE=$(ruby /Users/snow/Documents/Xcode/Sparkle/Extras/Signing\\ Tools/sign_update.rb \"$ARCHIVE_FILENAME\" /Volumes/keys/dsa_priv.pem )\n\n\n# echo cat <<EOF | ssh louis@underwood.ath.cx cat \">\" /Library/WebServer/Documents/Archive/zfs.xml\n\ncat  <<EOF \n<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rss version=\"2.0\" xmlns:sparkle=\"http://www.andymatuschak.org/xml-namepsaces/sparkle\">\n<channel>\n\t\t<item>\n\t\t\t<title>Version $VERSION</title>\n\t\t\t<sparkle:releaseNotesLink>$RELEASENOTES_URL</sparkle:releaseNotesLink>\n\t\t\t<pubDate>$PUBDATE</pubDate>\n\t\t    <sparkle:minimumSystemVersion>$MACOSX_DEPLOYMENT_TARGET</sparkle:minimumSystemVersion>\n\t\t\t<enclosure\n\t\t\t\turl=\"$DOWNLOAD_URL\"\n\t\t\t\tsparkle:version=\"$VERSION\"\n\t\t\t\ttype=\"application/octet-stream\"\n\t\t\t\tlength=\"$SIZE\"\n\t\t\t\tsparkle:dsaSignature=\"$SIGNATURE\"\n\t\t\t/>\n\t\t</item>\n</channel>\n</rss>\nEOF\n\necho scp \"$HOME/Documents/Xcode/ZFS-DUModule/build/Release/$ARCHIVE_FILENAME\" louis@underwood.ath.cx:/Library/WebServer/Documents/Archive";
 		};
@@ -469,6 +474,7 @@
 				8057C97710D9D81B00DBFBFD /* ZStatus.m in Sources */,
 				802763D21116266300242115 /* CoreZFS.xcdatamodel in Sources */,
 				8093BEF0111A23FF005AC76A /* No.m in Sources */,
+				805DFE2E113C6B5B00F09A2F /* DUDisk-ZFSDisk.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

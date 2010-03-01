@@ -42,11 +42,17 @@
 	BOOL BUNDLE = [NSBundle loadNibNamed:@"ZFS" owner:self ];
 	if (!BUNDLE) {
 		[DULog log:@"ZFS Nib not loading. Will not load ZFS.dumodule"];
-		[self Overworked:@"ZFS could not load.":@"ZFS could not load the nib. ZFS will not load"];
+		[self Overworked:@"ZFS could not load.":@"ZFS could not load the nib. 'ZFS.DUModule' will not load."];
+		[ZFSSparkle release];
+		[ZCon release];
+		[ZView release];
+		[ZItem release];
+		[self dealloc];
 		return nil;
 	}
 	if (![[[NSFileManager alloc] init] fileExistsAtPath:@"/usr/sbin/zpool"]) {
-		[self Overworked:@"ZFS.kext could not be found.":@"Please download & install the ZFS command line tools from 'https://groups.google.com/group/zfs-macos/files'."];
+		[self Overworked:@"ZFS.kext could not be found.":@"Please download & install the ZFS command line tools from 'https://groups.google.com/group/zfs-macos/files'. 'ZFS.DUModule' will not load."];
+//				[[NSBundle bundleForClass:[self class]] unload];
 		 return nil;
 	}
 	else {
@@ -59,8 +65,6 @@
 {
 
 	[self setWindowController:self];
-	NSLog(@"%@",[[DUDiskController alloc] masterDiskList]);
-	NSLog(@"%@",[[DUDiskController alloc] masterVisibleDiskList]);
     [outlineView registerForDraggedTypes:[NSArray arrayWithObject:AbstractTreeNodeType]];
 	[outlineView registerForDraggedTypes:[NSArray arrayWithObject:DiskInfoType]];
 
@@ -111,6 +115,10 @@
 //	[NC addObserver:self selector:@selector(log:) name:nil object:nil];
 	[NC addObserver:(id)self selector:@selector(loadNib	:) name:@"Current Tab" object:NULL];
 }
+#pragma mark Debug
+-(void)log:(NSNotificationCenter *)note {
+NSLog(@"note = %@", note);
+}
 -(void)Overworked:(NSString *)Header :(NSString *)Body
 {
 //	Quick notifications.
@@ -119,15 +127,11 @@
 		[theAlert setInformativeText:Body];
 		[theAlert setMessageText:Header];
 		[theAlert setIcon:nil];
-		[theAlert setShowsSuppressionButton:1];
+		[theAlert setShowsSuppressionButton:0];
 		[theAlert runModal];
 }
 
 
-#pragma mark Debug
--(void)log:(NSNotificationCenter *)note {
-NSLog(@"note = %@", note);
-}
 
 #pragma mark Sparkle
 -(SUUpdater *)updater {

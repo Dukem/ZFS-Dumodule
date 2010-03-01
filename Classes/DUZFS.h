@@ -18,6 +18,7 @@
 #import "DUDiskController.h"
 #import "DUDiskController-DUPrivate.h"
 #import "DUNamer.h"
+#import "DUDisk.h"
 
 #include "ZFSSparkle.h"
 #include "ZStatus.h"

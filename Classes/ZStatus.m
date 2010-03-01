@@ -2,7 +2,7 @@
 //  ZViewController.m
 //  ZFS
 //
-//  Created by Louis Jencka on 12/16/09.
+//  Created by Louis on 12/16/09.
 //  Copyright 2009 underwood. All rights reserved.
 //
 
@@ -314,8 +314,8 @@
 	zfsCurrentView = zother;
 	zview = [zother superview];
 //	
-    collection = [[NSMutableArray alloc] init];
-    zcollection = [[NSMutableArray alloc] init];
+    collection = [[[NSMutableArray alloc] initWithCapacity:0] retain];
+    zcollection = [[[NSMutableArray alloc] initWithCapacity:0] retain];
 	Pirates = [[[NSMutableArray alloc] initWithCapacity:0] retain];
 	ZPirates = [[[NSMutableArray alloc] initWithCapacity:0] retain];
 	
@@ -341,8 +341,6 @@
 	NSArray *pboardTypes = [pboard types];
 	[newDiskTable registerForDraggedTypes:pboardTypes];
 	[collectionView registerForDraggedTypes:[NSArray arrayWithObject:DiskInfoType]];
-
-	
 	
 		NSUInteger Integer;
 	Integer = 0;
@@ -359,6 +357,7 @@
 		
 		}
 	[self zfsOptionsList];
+	NSLog(@"1");
 	[self kextCheck];
 }
 - (IBAction)zlistUpdate:(id)sender
@@ -395,7 +394,6 @@
 
 	NSMutableArray *CurrentValues = [[NSMutableArray alloc] init];
 	id v;
-
 	NSMutableDictionary *variable = [[NSMutableDictionary alloc] init];
 		NSEnumerator *key = [zfs keyEnumerator];
 		while (value = [key nextObject]) 
@@ -416,7 +414,6 @@
 		NSRange range = [value rangeOfString:v];
 		if (range.location == NSNotFound) 
 		{
-		
 		CurrentValues =	[NSMutableArray arrayWithArray:[value componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]];
 			[CurrentValues insertObject:v atIndex:0];
 		}
@@ -438,7 +435,6 @@
 		 }
 	}
 
-	
 	
 	
 	Integer = 0;

@@ -4,6 +4,7 @@
 		activeArchitecturePreference = x86_64;
 		activeBuildConfigurationName = Release;
 		activeExecutable = 809A724810D1BFF100BD2AF7 /* Disk Utility */;
+		activeSDKPreference = macosx10.5;
 		activeTarget = 8D5B49AC048680CD000E48DA /* ZFS */;
 		addToTargets = (
 			8D5B49AC048680CD000E48DA /* ZFS */,
@@ -60,7 +61,7 @@
 				PBXFileTableDataSourceColumnWidthsKey = (
 					22,
 					300,
-					546,
+					590,
 				);
 				PBXFileTableDataSourceColumnsKey = (
 					PBXExecutablesDataSource_ActiveFlagID,
@@ -164,16 +165,12 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 287105730;
-			PBXWorkspaceStateSaveDate = 287105730;
+			PBXPerProjectTemplateStateSaveDate = 289171424;
+			PBXWorkspaceStateSaveDate = 289171424;
 		};
 		perUserProjectItems = {
-			8015C7AA111AA41D00118404 /* PBXTextBookmark */ = 8015C7AA111AA41D00118404 /* PBXTextBookmark */;
 			801BF1AC10EB1292009B3761 /* PBXTextBookmark */ = 801BF1AC10EB1292009B3761 /* PBXTextBookmark */;
-			801C0622110E286400594FB0 /* PlistBookmark */ = 801C0622110E286400594FB0 /* PlistBookmark */;
-			801DA38D1116A96A00A525CE /* PBXBookmark */ = 801DA38D1116A96A00A525CE /* PBXBookmark */;
 			801DA38E1116A96A00A525CE /* PBXBookmark */ = 801DA38E1116A96A00A525CE /* PBXBookmark */;
-			80202A2810E861C00036A3E7 /* PBXTextBookmark */ = 80202A2810E861C00036A3E7 /* PBXTextBookmark */;
 			804DCCCA10DD5C4800835DE0 /* PBXTextBookmark */ = 804DCCCA10DD5C4800835DE0 /* PBXTextBookmark */;
 			804DCCCB10DD5C4800835DE0 /* PBXTextBookmark */ = 804DCCCB10DD5C4800835DE0 /* PBXTextBookmark */;
 			804DCCCC10DD5C4800835DE0 /* PBXTextBookmark */ = 804DCCCC10DD5C4800835DE0 /* PBXTextBookmark */;
@@ -181,7 +178,35 @@
 			8055887A10D8340400BED304 /* PBXTextBookmark */ = 8055887A10D8340400BED304 /* PBXTextBookmark */;
 			8057C8CF10D9C37E00DBFBFD /* PBXTextBookmark */ = 8057C8CF10D9C37E00DBFBFD /* PBXTextBookmark */;
 			8057C8D110D9C37E00DBFBFD /* PBXTextBookmark */ = 8057C8D110D9C37E00DBFBFD /* PBXTextBookmark */;
-			8067577110D4593300D18740 /* PBXTextBookmark */ = 8067577110D4593300D18740 /* PBXTextBookmark */;
+			805DFE19113C68BF00F09A2F /* PBXBookmark */ = 805DFE19113C68BF00F09A2F /* PBXBookmark */;
+			805DFE66113C7BE500F09A2F /* PBXTextBookmark */ = 805DFE66113C7BE500F09A2F /* PBXTextBookmark */;
+			805DFE67113C7BE500F09A2F /* PBXTextBookmark */ = 805DFE67113C7BE500F09A2F /* PBXTextBookmark */;
+			805DFE68113C7BE500F09A2F /* PBXTextBookmark */ = 805DFE68113C7BE500F09A2F /* PBXTextBookmark */;
+			805DFE69113C7BE500F09A2F /* PBXTextBookmark */ = 805DFE69113C7BE500F09A2F /* PBXTextBookmark */;
+			805DFE6A113C7BE500F09A2F /* PBXTextBookmark */ = 805DFE6A113C7BE500F09A2F /* PBXTextBookmark */;
+			805DFE6B113C7BE500F09A2F /* PBXTextBookmark */ = 805DFE6B113C7BE500F09A2F /* PBXTextBookmark */;
+			805DFE6C113C7BE500F09A2F /* PBXTextBookmark */ = 805DFE6C113C7BE500F09A2F /* PBXTextBookmark */;
+			805DFE6D113C7BE500F09A2F /* PBXTextBookmark */ = 805DFE6D113C7BE500F09A2F /* PBXTextBookmark */;
+			805DFE6E113C7BE500F09A2F /* PBXTextBookmark */ = 805DFE6E113C7BE500F09A2F /* PBXTextBookmark */;
+			805DFE6F113C7BE500F09A2F /* PBXTextBookmark */ = 805DFE6F113C7BE500F09A2F /* PBXTextBookmark */;
+			805DFE71113C7BE500F09A2F /* PBXTextBookmark */ = 805DFE71113C7BE500F09A2F /* PBXTextBookmark */;
+			805DFE73113C7BE500F09A2F /* PBXTextBookmark */ = 805DFE73113C7BE500F09A2F /* PBXTextBookmark */;
+			805DFE74113C7BE500F09A2F /* PBXTextBookmark */ = 805DFE74113C7BE500F09A2F /* PBXTextBookmark */;
+			805DFE75113C7BE500F09A2F /* PBXTextBookmark */ = 805DFE75113C7BE500F09A2F /* PBXTextBookmark */;
+			805DFE76113C7BE500F09A2F /* PBXTextBookmark */ = 805DFE76113C7BE500F09A2F /* PBXTextBookmark */;
+			805DFE77113C7BE500F09A2F /* PBXTextBookmark */ = 805DFE77113C7BE500F09A2F /* PBXTextBookmark */;
+			805DFE78113C7BE500F09A2F /* PBXTextBookmark */ = 805DFE78113C7BE500F09A2F /* PBXTextBookmark */;
+			805DFE79113C7BE500F09A2F /* PBXTextBookmark */ = 805DFE79113C7BE500F09A2F /* PBXTextBookmark */;
+			805DFE7A113C7BE500F09A2F /* PBXTextBookmark */ = 805DFE7A113C7BE500F09A2F /* PBXTextBookmark */;
+			805DFE7B113C7BE500F09A2F /* PBXTextBookmark */ = 805DFE7B113C7BE500F09A2F /* PBXTextBookmark */;
+			805DFE7C113C7BE500F09A2F /* PBXTextBookmark */ = 805DFE7C113C7BE500F09A2F /* PBXTextBookmark */;
+			805DFE7D113C7BE500F09A2F /* PBXTextBookmark */ = 805DFE7D113C7BE500F09A2F /* PBXTextBookmark */;
+			805DFE7E113C7BE500F09A2F /* PBXTextBookmark */ = 805DFE7E113C7BE500F09A2F /* PBXTextBookmark */;
+			805DFE7F113C7BE500F09A2F /* XDModelBookmark */ = 805DFE7F113C7BE500F09A2F /* XDModelBookmark */;
+			805DFEA4113C7FD900F09A2F /* PBXTextBookmark */ = 805DFEA4113C7FD900F09A2F /* PBXTextBookmark */;
+			805DFEA5113C7FD900F09A2F /* PlistBookmark */ = 805DFEA5113C7FD900F09A2F /* PlistBookmark */;
+			805DFEA6113C7FD900F09A2F /* PlistBookmark */ = 805DFEA6113C7FD900F09A2F /* PlistBookmark */;
+			805DFEA7113C7FD900F09A2F /* PBXTextBookmark */ = 805DFEA7113C7FD900F09A2F /* PBXTextBookmark */;
 			8067577910D465FF00D18740 /* PBXTextBookmark */ = 8067577910D465FF00D18740 /* PBXTextBookmark */;
 			8075080110D7312200686CB3 /* PBXBookmark */ = 8075080110D7312200686CB3 /* PBXBookmark */;
 			807FAEC7111CE2BE00AFBEE0 /* PBXTextBookmark */ = 807FAEC7111CE2BE00AFBEE0 /* PBXTextBookmark */;
@@ -193,15 +218,7 @@
 			807FAECD111CE2BE00AFBEE0 /* PBXTextBookmark */ = 807FAECD111CE2BE00AFBEE0 /* PBXTextBookmark */;
 			807FAECE111CE2BE00AFBEE0 /* PBXTextBookmark */ = 807FAECE111CE2BE00AFBEE0 /* PBXTextBookmark */;
 			807FAECF111CE2BE00AFBEE0 /* PBXTextBookmark */ = 807FAECF111CE2BE00AFBEE0 /* PBXTextBookmark */;
-			807FAED0111CE2BE00AFBEE0 /* PBXTextBookmark */ = 807FAED0111CE2BE00AFBEE0 /* PBXTextBookmark */;
 			807FAED1111CE2BE00AFBEE0 /* PBXTextBookmark */ = 807FAED1111CE2BE00AFBEE0 /* PBXTextBookmark */;
-			807FAED2111CE2BE00AFBEE0 /* PBXTextBookmark */ = 807FAED2111CE2BE00AFBEE0 /* PBXTextBookmark */;
-			807FAED3111CE2BE00AFBEE0 /* PBXTextBookmark */ = 807FAED3111CE2BE00AFBEE0 /* PBXTextBookmark */;
-			807FAED4111CE2BE00AFBEE0 /* PBXTextBookmark */ = 807FAED4111CE2BE00AFBEE0 /* PBXTextBookmark */;
-			807FAED5111CE2BE00AFBEE0 /* PBXTextBookmark */ = 807FAED5111CE2BE00AFBEE0 /* PBXTextBookmark */;
-			807FAED6111CE2BE00AFBEE0 /* PBXTextBookmark */ = 807FAED6111CE2BE00AFBEE0 /* PBXTextBookmark */;
-			807FAED7111CE2BE00AFBEE0 /* PBXTextBookmark */ = 807FAED7111CE2BE00AFBEE0 /* PBXTextBookmark */;
-			807FAED8111CE2BE00AFBEE0 /* PBXTextBookmark */ = 807FAED8111CE2BE00AFBEE0 /* PBXTextBookmark */;
 			807FAEFD111CE35A00AFBEE0 /* PBXTextBookmark */ = 807FAEFD111CE35A00AFBEE0 /* PBXTextBookmark */;
 			807FAEFF111CE35A00AFBEE0 /* PBXTextBookmark */ = 807FAEFF111CE35A00AFBEE0 /* PBXTextBookmark */;
 			807FAF19111CE4D500AFBEE0 /* PBXTextBookmark */ = 807FAF19111CE4D500AFBEE0 /* PBXTextBookmark */;
@@ -211,21 +228,12 @@
 			807FAF69111CE7D800AFBEE0 /* PBXTextBookmark */ = 807FAF69111CE7D800AFBEE0 /* PBXTextBookmark */;
 			807FAF6A111CE7D800AFBEE0 /* PBXTextBookmark */ = 807FAF6A111CE7D800AFBEE0 /* PBXTextBookmark */;
 			807FAF6B111CE7D800AFBEE0 /* PBXTextBookmark */ = 807FAF6B111CE7D800AFBEE0 /* PBXTextBookmark */;
-			807FAF6C111CE7D800AFBEE0 /* PBXTextBookmark */ = 807FAF6C111CE7D800AFBEE0 /* PBXTextBookmark */;
-			807FB035111D01B600AFBEE0 /* XDModelBookmark */ = 807FB035111D01B600AFBEE0 /* XDModelBookmark */;
-			807FB036111D01B600AFBEE0 /* PBXTextBookmark */ = 807FB036111D01B600AFBEE0 /* PBXTextBookmark */;
-			807FB037111D01B600AFBEE0 /* PBXTextBookmark */ = 807FB037111D01B600AFBEE0 /* PBXTextBookmark */;
-			807FB038111D01B600AFBEE0 /* PBXTextBookmark */ = 807FB038111D01B600AFBEE0 /* PBXTextBookmark */;
-			807FB039111D01B600AFBEE0 /* PBXTextBookmark */ = 807FB039111D01B600AFBEE0 /* PBXTextBookmark */;
 			809205471119462A00732189 /* PBXTextBookmark */ = 809205471119462A00732189 /* PBXTextBookmark */;
 			809205491119462A00732189 /* PBXTextBookmark */ = 809205491119462A00732189 /* PBXTextBookmark */;
 			8092054C1119462A00732189 /* PBXTextBookmark */ = 8092054C1119462A00732189 /* PBXTextBookmark */;
 			8092054D1119462A00732189 /* PBXTextBookmark */ = 8092054D1119462A00732189 /* PBXTextBookmark */;
 			8092054E1119462A00732189 /* PBXTextBookmark */ = 8092054E1119462A00732189 /* PBXTextBookmark */;
 			809205501119462A00732189 /* PBXTextBookmark */ = 809205501119462A00732189 /* PBXTextBookmark */;
-			809205581119462A00732189 /* PBXTextBookmark */ = 809205581119462A00732189 /* PBXTextBookmark */;
-			8092055A1119462A00732189 /* PBXTextBookmark */ = 8092055A1119462A00732189 /* PBXTextBookmark */;
-			8092055B1119462A00732189 /* PBXTextBookmark */ = 8092055B1119462A00732189 /* PBXTextBookmark */;
 			8092055C1119462A00732189 /* PBXTextBookmark */ = 8092055C1119462A00732189 /* PBXTextBookmark */;
 			809205641119462A00732189 /* PBXTextBookmark */ = 809205641119462A00732189 /* PBXTextBookmark */;
 			809205651119462A00732189 /* PBXTextBookmark */ = 809205651119462A00732189 /* PBXTextBookmark */;
@@ -235,14 +243,12 @@
 			809205A1111947EF00732189 /* PBXTextBookmark */ = 809205A1111947EF00732189 /* PBXTextBookmark */;
 			809205A7111947EF00732189 /* PBXTextBookmark */ = 809205A7111947EF00732189 /* PBXTextBookmark */;
 			809205E41119495C00732189 /* PBXTextBookmark */ = 809205E41119495C00732189 /* PBXTextBookmark */;
-			809206651119512700732189 /* PBXTextBookmark */ = 809206651119512700732189 /* PBXTextBookmark */;
 			809206661119512700732189 /* PBXTextBookmark */ = 809206661119512700732189 /* PBXTextBookmark */;
 			809206671119512700732189 /* PBXTextBookmark */ = 809206671119512700732189 /* PBXTextBookmark */;
 			809206C31119589300732189 /* PBXTextBookmark */ = 809206C31119589300732189 /* PBXTextBookmark */;
 			80924EAB10CF353500ED60B6 /* DUDiskController.h */ = 80924EAB10CF353500ED60B6 /* DUDiskController.h */;
 			8092509B10CF630000ED60B6 /* PBXTextBookmark */ = 8092509B10CF630000ED60B6 /* PBXTextBookmark */;
 			8093472810EB3F970092970C /* PBXTextBookmark */ = 8093472810EB3F970092970C /* PBXTextBookmark */;
-			8093BF30111A2818005AC76A /* PBXTextBookmark */ = 8093BF30111A2818005AC76A /* PBXTextBookmark */;
 			809A723110D1BE7600BD2AF7 /* PBXTextBookmark */ = 809A723110D1BE7600BD2AF7 /* PBXTextBookmark */;
 			809A728B10D1C3AA00BD2AF7 /* PBXTextBookmark */ = 809A728B10D1C3AA00BD2AF7 /* PBXTextBookmark */;
 			809A729010D1C3AA00BD2AF7 /* PBXTextBookmark */ = 809A729010D1C3AA00BD2AF7 /* PBXTextBookmark */;
@@ -251,13 +257,13 @@
 			809A9FB3110006AE007E0286 /* PBXTextBookmark */ = 809A9FB3110006AE007E0286 /* PBXTextBookmark */;
 			809A9FCA110008DF007E0286 /* PBXTextBookmark */ = 809A9FCA110008DF007E0286 /* PBXTextBookmark */;
 			80A4E92D10D6BCC0003F304D /* PBXTextBookmark */ = 80A4E92D10D6BCC0003F304D /* PBXTextBookmark */;
+			80A8C653111F9CF000CBFF8D /* PBXBookmark */ = 80A8C653111F9CF000CBFF8D /* PBXBookmark */;
 			80A9DA7C111A56B800B7BF1C /* PBXTextBookmark */ = 80A9DA7C111A56B800B7BF1C /* PBXTextBookmark */;
-			80AF3146111A1F46009F9C96 /* PBXTextBookmark */ = 80AF3146111A1F46009F9C96 /* PBXTextBookmark */;
 			80AF3149111A1F46009F9C96 /* PBXTextBookmark */ = 80AF3149111A1F46009F9C96 /* PBXTextBookmark */;
-			80AF314B111A1F46009F9C96 /* PBXTextBookmark */ = 80AF314B111A1F46009F9C96 /* PBXTextBookmark */;
 			80BDEF531115F8E5004AEAAF /* PBXTextBookmark */ = 80BDEF531115F8E5004AEAAF /* PBXTextBookmark */;
 			80C208161100EAB700CFBAD4 /* PBXTextBookmark */ = 80C208161100EAB700CFBAD4 /* PBXTextBookmark */;
-			80C58F5011191D10000A0FCE /* PlistBookmark */ = 80C58F5011191D10000A0FCE /* PlistBookmark */;
+			80D5DCC9113C67D30054E2F9 /* PBXTextBookmark */ = 80D5DCC9113C67D30054E2F9 /* PBXTextBookmark */;
+			80D7FA0B113B952600B67103 /* PlistBookmark */ = 80D7FA0B113B952600B67103 /* PlistBookmark */;
 			80EDFE6B10D355CF00D22595 /* PBXTextBookmark */ = 80EDFE6B10D355CF00D22595 /* PBXTextBookmark */;
 			80EDFEBC10D359AC00D22595 /* PBXTextBookmark */ = 80EDFEBC10D359AC00D22595 /* PBXTextBookmark */;
 			80F92DD610F93479001932DD /* PBXTextBookmark */ = 80F92DD610F93479001932DD /* PBXTextBookmark */;
@@ -269,7 +275,7 @@
 	};
 	089C167EFE841241C02AAC07 /* English */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {545, 395}}";
+			sepNavIntBoundsRect = "{{0, 0}, {880, 297}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 45}";
 		};
@@ -300,16 +306,6 @@
 			sepNavVisRange = "{0, 371}";
 		};
 	};
-	8015C7AA111AA41D00118404 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 8057C97510D9D81B00DBFBFD /* ZStatus.h */;
-		name = "ZStatus.h: 73";
-		rLen = 0;
-		rLoc = 2080;
-		rType = 0;
-		vrLen = 1321;
-		vrLoc = 324;
-	};
 	801BF1AC10EB1292009B3761 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 801BF1AD10EB1292009B3761 /* OSMessageNotification.h */;
@@ -327,41 +323,9 @@
 		path = /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/IOKit.framework/Versions/A/Headers/OSMessageNotification.h;
 		sourceTree = "<absolute>";
 	};
-	801C0622110E286400594FB0 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 806512EA1107F36C00DFBEEB /* zfs.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = "/Users/snow/Documents/Xcode/ZFS-DUModule/zfs.plist";
-		rLen = 0;
-		rLoc = 9223372036854775808;
-	};
-	801DA38D1116A96A00A525CE /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = 800E479710D6E8EE00AD9898 /* VolumeIcon.icns */;
-	};
 	801DA38E1116A96A00A525CE /* PBXBookmark */ = {
 		isa = PBXBookmark;
 		fRef = 801DA37D1116A81E00A525CE /* ZFS.png */;
-	};
-	80202A2810E861C00036A3E7 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 80202A2910E861C00036A3E7 /* ZStatus.m */;
-		name = "ZStatus.m: 16";
-		rLen = 441;
-		rLoc = 262;
-		rType = 0;
-		vrLen = 979;
-		vrLoc = 199;
-	};
-	80202A2910E861C00036A3E7 /* ZStatus.m */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.c.objc;
-		name = ZStatus.m;
-		path = /Users/snow/Desktop/ZStatus.m;
-		sourceTree = "<absolute>";
 	};
 	802763D11116266300242115 /* CoreZFS.xcdatamodel */ = {
 		uiCtxt = {
@@ -402,8 +366,8 @@
 						_percentageOfCollapsedView = 0;
 						isCollapsed = yes;
 						sizes = (
-							"{{0, 0}, {647, 218}}",
-							"{{652, 0}, {287, 218}}",
+							"{{0, 0}, {647, 220}}",
+							"{{652, 0}, {287, 220}}",
 						);
 					};
 					diagramSplitGeometry = {
@@ -413,7 +377,7 @@
 						isCollapsed = yes;
 						sizes = (
 							"{{0, 0}, {939, 220}}",
-							"{{0, 225}, {939, 122}}",
+							"{{0, 225}, {939, 87}}",
 						);
 					};
 					tableSplitGeometry = {
@@ -422,8 +386,8 @@
 						_percentageOfCollapsedView = 0;
 						isCollapsed = yes;
 						sizes = (
-							"{{0, 0}, {309, 218}}",
-							"{{314, 0}, {333, 218}}",
+							"{{0, 0}, {309, 220}}",
+							"{{314, 0}, {333, 220}}",
 						);
 					};
 				};
@@ -523,7 +487,7 @@
 					);
 				};
 				"xdesign model browser state key - shown/hidden" = 1;
-				"xdesign model diagram view visible rect key" = "{{-138, 71}, {924, 107}}";
+				"xdesign model diagram view visible rect key" = "{{-138, 71}, {924, 72}}";
 			};
 		};
 	};
@@ -622,27 +586,448 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {880, 1599}}";
 			sepNavSelRange = "{2080, 0}";
-			sepNavVisRange = "{324, 1321}";
+			sepNavVisRange = "{957, 688}";
 			sepNavWindowFrame = "{{15, 49}, {911, 727}}";
 		};
 	};
 	8057C97610D9D81B00DBFBFD /* ZStatus.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1090, 9087}}";
-			sepNavSelRange = "{5531, 0}";
-			sepNavVisRange = "{5532, 1125}";
+			sepNavIntBoundsRect = "{{0, 0}, {880, 9412}}";
+			sepNavSelRange = "{56, 0}";
+			sepNavVisRange = "{0, 456}";
 			sepNavWindowFrame = "{{15, 51}, {911, 727}}";
 		};
 	};
-	806512EA1107F36C00DFBEEB /* zfs.plist */ = {
+	805DFE19113C68BF00F09A2F /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 809A71B110D1B94C00BD2AF7 /* DUZFS.m */;
+	};
+	805DFE2C113C6B5B00F09A2F /* DUDisk-ZFSDisk.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {836, 650}}";
-			sepNavSelRange = "{628, 0}";
-			sepNavVisRange = "{0, 1194}";
-			sepNavWindowFrame = "{{266, 51}, {911, 727}}";
+			sepNavIntBoundsRect = "{{0, 0}, {880, 297}}";
+			sepNavSelRange = "{228, 0}";
+			sepNavVisRange = "{0, 281}";
 		};
 	};
-	8067577110D4593300D18740 /* PBXTextBookmark */ = {
+	805DFE2D113C6B5B00F09A2F /* DUDisk-ZFSDisk.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {887, 364}}";
+			sepNavSelRange = "{55, 0}";
+			sepNavVisRange = "{32, 688}";
+		};
+	};
+	805DFE66113C7BE500F09A2F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 80924EA110CF353500ED60B6 /* DUContextualMenus.h */;
+		name = "DUContextualMenus.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 502;
+		vrLoc = 3;
+	};
+	805DFE67113C7BE500F09A2F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 80924E9E10CF353500ED60B6 /* DUBaseWindowController.h */;
+		name = "DUBaseWindowController.h: 55";
+		rLen = 10;
+		rLoc = 1742;
+		rType = 0;
+		vrLen = 663;
+		vrLoc = 141;
+	};
+	805DFE68113C7BE500F09A2F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 80924EB810CF353500ED60B6 /* DUModule.h */;
+		name = "DUModule.h: 67";
+		rLen = 0;
+		rLoc = 1655;
+		rType = 0;
+		vrLen = 784;
+		vrLoc = 1054;
+	};
+	805DFE69113C7BE500F09A2F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 80CA0CBF10D3064C00DEB1F1 /* DMAsyncDelegate-Protocol.h */;
+		name = "DMAsyncDelegate-Protocol.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 536;
+		vrLoc = 0;
+	};
+	805DFE6A113C7BE500F09A2F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 80924E9C10CF353500ED60B6 /* DUBaseDiskListViewController-SelfTest.h */;
+		name = "DUBaseDiskListViewController-SelfTest.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 341;
+		vrLoc = 0;
+	};
+	805DFE6B113C7BE500F09A2F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 80924EA410CF353500ED60B6 /* DUDisk-DMDiskExtended.h */;
+		name = "DUDisk-DMDiskExtended.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 549;
+		vrLoc = 141;
+	};
+	805DFE6C113C7BE500F09A2F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 80924EA310CF353500ED60B6 /* DUDisk-DMDisk.h */;
+		name = "DUDisk-DMDisk.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 576;
+		vrLoc = 2240;
+	};
+	805DFE6D113C7BE500F09A2F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 80924EA210CF353500ED60B6 /* DUDisk-DiskImageObjectMethods.h */;
+		name = "DUDisk-DiskImageObjectMethods.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 750;
+		vrLoc = 0;
+	};
+	805DFE6E113C7BE500F09A2F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 809D95C21120CC3F00CE1D10 /* dsa_pub.pem */;
+		name = "dsa_pub.pem: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1178;
+		vrLoc = 0;
+	};
+	805DFE6F113C7BE500F09A2F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 805DFE70113C7BE500F09A2F /* DiskArbitration.h */;
+		name = "DiskArbitration.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 808;
+		vrLoc = 4185;
+	};
+	805DFE70113C7BE500F09A2F /* DiskArbitration.h */ = {
+		isa = PBXFileReference;
+		name = DiskArbitration.h;
+		path = /System/Library/Frameworks/DiskArbitration.framework/Headers/DiskArbitration.h;
+		sourceTree = "<absolute>";
+	};
+	805DFE71113C7BE500F09A2F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 805DFE72113C7BE500F09A2F /* DADisk.h */;
+		name = "DADisk.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 975;
+		vrLoc = 0;
+	};
+	805DFE72113C7BE500F09A2F /* DADisk.h */ = {
+		isa = PBXFileReference;
+		name = DADisk.h;
+		path = /System/Library/Frameworks/DiskArbitration.framework/Headers/DADisk.h;
+		sourceTree = "<absolute>";
+	};
+	805DFE73113C7BE500F09A2F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 80924EA710CF353500ED60B6 /* DUDiskController-DMManager.h */;
+		name = "DUDiskController-DMManager.h: 12";
+		rLen = 88;
+		rLoc = 351;
+		rType = 0;
+		vrLen = 773;
+		vrLoc = 0;
+	};
+	805DFE74113C7BE500F09A2F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 80924EA510CF353500ED60B6 /* DUDisk-LVMExtended.h */;
+		name = "DUDisk-LVMExtended.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 330;
+		vrLoc = 0;
+	};
+	805DFE75113C7BE500F09A2F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 80924EA610CF353500ED60B6 /* DUDisk.h */;
+		name = "DUDisk.h: 94";
+		rLen = 0;
+		rLoc = 2574;
+		rType = 0;
+		vrLen = 615;
+		vrLoc = 1221;
+	};
+	805DFE76113C7BE500F09A2F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 809A9EC110FFE10E007E0286 /* DUBaseDiskListViewController.h */;
+		name = "DUBaseDiskListViewController.h: 66";
+		rLen = 0;
+		rLoc = 2287;
+		rType = 0;
+		vrLen = 668;
+		vrLoc = 163;
+	};
+	805DFE77113C7BE500F09A2F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 809A71B010D1B94C00BD2AF7 /* DUZFS.h */;
+		name = "DUZFS.h: 22";
+		rLen = 0;
+		rLoc = 534;
+		rType = 0;
+		vrLen = 562;
+		vrLoc = 111;
+	};
+	805DFE78113C7BE500F09A2F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8092064A11194CB100732189 /* DUDiskController.h */;
+		name = "DUDiskController.h: 58";
+		rLen = 17;
+		rLoc = 1676;
+		rType = 0;
+		vrLen = 756;
+		vrLoc = 1191;
+	};
+	805DFE79113C7BE500F09A2F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 805DFE2C113C6B5B00F09A2F /* DUDisk-ZFSDisk.h */;
+		name = "DUDisk-ZFSDisk.h: 14";
+		rLen = 0;
+		rLoc = 228;
+		rType = 0;
+		vrLen = 281;
+		vrLoc = 0;
+	};
+	805DFE7A113C7BE500F09A2F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8057C97610D9D81B00DBFBFD /* ZStatus.m */;
+		name = "ZStatus.m: 5";
+		rLen = 0;
+		rLoc = 56;
+		rType = 0;
+		vrLen = 456;
+		vrLoc = 0;
+	};
+	805DFE7B113C7BE500F09A2F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 805DFE2D113C6B5B00F09A2F /* DUDisk-ZFSDisk.m */;
+		name = "DUDisk-ZFSDisk.m: 5";
+		rLen = 0;
+		rLoc = 55;
+		rType = 0;
+		vrLen = 688;
+		vrLoc = 32;
+	};
+	805DFE7C113C7BE500F09A2F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8057C97510D9D81B00DBFBFD /* ZStatus.h */;
+		name = "ZStatus.h: 73";
+		rLen = 0;
+		rLoc = 2080;
+		rType = 0;
+		vrLen = 688;
+		vrLoc = 957;
+	};
+	805DFE7D113C7BE500F09A2F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 809A71B110D1B94C00BD2AF7 /* DUZFS.m */;
+		name = "DUZFS.m: 70";
+		rLen = 0;
+		rLoc = 1993;
+		rType = 0;
+		vrLen = 745;
+		vrLoc = 0;
+	};
+	805DFE7E113C7BE500F09A2F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8093BEEF111A23FF005AC76A /* No.m */;
+		name = "No.m: 5";
+		rLen = 0;
+		rLoc = 43;
+		rType = 0;
+		vrLen = 432;
+		vrLoc = 0;
+	};
+	805DFE7F113C7BE500F09A2F /* XDModelBookmark */ = {
+		isa = XDModelBookmark;
+		fRef = 802763D11116266300242115 /* CoreZFS.xcdatamodel */;
+		fallbackIsa = PBXBookmark;
+		uiCtxt = {
+			UIContextForDetailArea = {
+				_indexOfSelectedPane = 0;
+				_indexOfSelectedView = 1;
+			};
+			UIContextForEntityArea = {
+				_indexOfSelectedView = 0;
+				chosenTableColumnns = (
+					"ET Entity",
+					"ET Abstract",
+					"ET Class",
+				);
+				chosenTableColumnns_sortDirections = (
+					NO,
+					YES,
+				);
+				chosenTableColumnns_sortKeys = (
+					entityClassName,
+					name,
+				);
+				chosenTableColumnns_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableWidths = (
+					103.000000,
+					22.000000,
+					159.080078,
+				);
+			};
+			UIContextForLayoutManager = {
+				detailSplitGeometry = {
+					_collapsingFrameDimension = 0;
+					_indexOfCollapsedView = 0;
+					_percentageOfCollapsedView = 0;
+					isCollapsed = yes;
+					sizes = (
+						"{{0, 0}, {647, 220}}",
+						"{{652, 0}, {287, 220}}",
+					);
+				};
+				diagramSplitGeometry = {
+					_collapsingFrameDimension = 0;
+					_indexOfCollapsedView = 0;
+					_percentageOfCollapsedView = 0;
+					isCollapsed = yes;
+					sizes = (
+						"{{0, 0}, {939, 220}}",
+						"{{0, 225}, {939, 87}}",
+					);
+				};
+				tableSplitGeometry = {
+					_collapsingFrameDimension = 0;
+					_indexOfCollapsedView = 0;
+					_percentageOfCollapsedView = 0;
+					isCollapsed = yes;
+					sizes = (
+						"{{0, 0}, {309, 220}}",
+						"{{314, 0}, {333, 220}}",
+					);
+				};
+			};
+			UIContextForPropertyArea = {
+				_indexOfSelectedView = 0;
+				chosenTableColumnnFRTs = (
+					"FT Fetch Request",
+					"FT Predicate",
+				);
+				chosenTableColumnnFRTs_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnFRTs_sortKeys = (
+					name,
+				);
+				chosenTableColumnnFRTs_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableColumnnsAT = (
+					"AT Attribute",
+					"AT Type",
+				);
+				chosenTableColumnnsAT_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnsAT_sortKeys = (
+					name,
+				);
+				chosenTableColumnnsAT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableColumnnsFPT = (
+					"FP FetchedProperty",
+					"FP Destination",
+					"FP Predicate",
+				);
+				chosenTableColumnnsFPT_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnsFPT_sortKeys = (
+					name,
+				);
+				chosenTableColumnnsFPT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableColumnnsPT = (
+					"PT Property",
+					"PT Kind",
+					"PT SharedKeyOne",
+				);
+				chosenTableColumnnsPT_sortDirections = (
+					NO,
+					YES,
+				);
+				chosenTableColumnnsPT_sortKeys = (
+					name,
+					sharedKeyOne.name,
+				);
+				chosenTableColumnnsPT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+					"compare:",
+				);
+				chosenTableColumnnsRT = (
+					"RT Relationship",
+					"RT Destination",
+				);
+				chosenTableColumnnsRT_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnsRT_sortKeys = (
+					name,
+				);
+				chosenTableColumnnsRT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableWidthsAT = (
+					128.000000,
+					64.000000,
+				);
+				chosenTableWidthsFPT = (
+					128.000000,
+					64.000000,
+					144.764160,
+				);
+				chosenTableWidthsFRT = (
+					128.000000,
+					249.764160,
+				);
+				chosenTableWidthsPT = (
+					128.000000,
+					108.110840,
+					96.570801,
+				);
+				chosenTableWidthsRT = (
+					128.000000,
+					64.000000,
+				);
+			};
+			"xdesign model browser state key - shown/hidden" = 1;
+			"xdesign model diagram view visible rect key" = "{{-138, 71}, {924, 72}}";
+			"xdesign model selected entities key" = (
+			);
+			"xdesign model selected properties key" = (
+			);
+		};
+	};
+	805DFEA4113C7FD900F09A2F /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 089C167EFE841241C02AAC07 /* English */;
 		name = "InfoPlist.strings: 1";
@@ -651,6 +1036,48 @@
 		rType = 0;
 		vrLen = 45;
 		vrLoc = 0;
+	};
+	805DFEA5113C7FD900F09A2F /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D5B49B7048680CD000E48DA /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleInfoDictionaryVersion,
+		);
+		name = "/Users/snow/Documents/Xcode/ZFS-DUModule/Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	805DFEA6113C7FD900F09A2F /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D5B49B7048680CD000E48DA /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleInfoDictionaryVersion,
+		);
+		name = "/Users/snow/Documents/Xcode/ZFS-DUModule/Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	805DFEA7113C7FD900F09A2F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 809A71B110D1B94C00BD2AF7 /* DUZFS.m */;
+		name = "DUZFS.m: 58";
+		rLen = 0;
+		rLoc = 1731;
+		rType = 0;
+		vrLen = 1519;
+		vrLoc = 791;
+	};
+	806512EA1107F36C00DFBEEB /* zfs.plist */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {836, 650}}";
+			sepNavSelRange = "{628, 0}";
+			sepNavVisRange = "{0, 1194}";
+			sepNavWindowFrame = "{{266, 51}, {911, 727}}";
+		};
 	};
 	8067577910D465FF00D18740 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -770,16 +1197,6 @@
 		vrLen = 629;
 		vrLoc = 4148;
 	};
-	807FAED0111CE2BE00AFBEE0 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 80924EA710CF353500ED60B6 /* DUDiskController-DMManager.h */;
-		name = "DUDiskController-DMManager.h: 12";
-		rLen = 88;
-		rLoc = 351;
-		rType = 0;
-		vrLen = 773;
-		vrLoc = 0;
-	};
 	807FAED1111CE2BE00AFBEE0 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 80924EA810CF353500ED60B6 /* DUDiskController-DMManagerExtended.h */;
@@ -790,87 +1207,12 @@
 		vrLen = 606;
 		vrLoc = 0;
 	};
-	807FAED2111CE2BE00AFBEE0 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 80924EA310CF353500ED60B6 /* DUDisk-DMDisk.h */;
-		name = "DUDisk-DMDisk.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 614;
-		vrLoc = 50;
-	};
-	807FAED3111CE2BE00AFBEE0 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 80924EA410CF353500ED60B6 /* DUDisk-DMDiskExtended.h */;
-		name = "DUDisk-DMDiskExtended.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 674;
-		vrLoc = 724;
-	};
-	807FAED4111CE2BE00AFBEE0 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 80924EA210CF353500ED60B6 /* DUDisk-DiskImageObjectMethods.h */;
-		name = "DUDisk-DiskImageObjectMethods.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 750;
-		vrLoc = 0;
-	};
-	807FAED5111CE2BE00AFBEE0 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 809A9EC110FFE10E007E0286 /* DUBaseDiskListViewController.h */;
-		name = "DUBaseDiskListViewController.h: 61";
-		rLen = 294;
-		rLoc = 1915;
-		rType = 0;
-		vrLen = 1340;
-		vrLoc = 1320;
-	};
-	807FAED6111CE2BE00AFBEE0 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 80924E9C10CF353500ED60B6 /* DUBaseDiskListViewController-SelfTest.h */;
-		name = "DUBaseDiskListViewController-SelfTest.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 341;
-		vrLoc = 0;
-	};
-	807FAED7111CE2BE00AFBEE0 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 80CA0CBF10D3064C00DEB1F1 /* DMAsyncDelegate-Protocol.h */;
-		name = "DMAsyncDelegate-Protocol.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 536;
-		vrLoc = 0;
-	};
-	807FAED8111CE2BE00AFBEE0 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 80924E9E10CF353500ED60B6 /* DUBaseWindowController.h */;
-		name = "DUBaseWindowController.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 982;
-		vrLoc = 848;
-	};
 	807FAEDA111CE2BE00AFBEE0 /* DUErase.h */ = {
 		isa = PBXFileReference;
 		lastKnownFileType = sourcecode.c.h;
 		name = DUErase.h;
 		path = "/Users/snow/Documents/Xcode/ZFS-DUModule/Classes/class-dump/Erase/DUErase.h";
 		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1216, 2197}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{1337, 734}";
-		};
 	};
 	807FAEFC111CE35A00AFBEE0 /* DMEraseDisk.h */ = {
 		isa = PBXFileReference;
@@ -878,11 +1220,6 @@
 		name = DMEraseDisk.h;
 		path = "/Users/snow/Documents/Xcode/ZFS-DUModule/Classes/class-dump/DiskManagement/DMEraseDisk.h";
 		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {964, 377}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{221, 680}";
-		};
 	};
 	807FAEFD111CE35A00AFBEE0 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -896,6 +1233,7 @@
 	};
 	807FAEFE111CE35A00AFBEE0 /* DMManager-Volume.h */ = {
 		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
 		name = "DMManager-Volume.h";
 		path = "/Users/snow/Documents/Xcode/ZFS-DUModule/Classes/class-dump/DiskManagement/DMManager-Volume.h";
 		sourceTree = "<absolute>";
@@ -912,6 +1250,7 @@
 	};
 	807FAF00111CE35A00AFBEE0 /* DMManager-PrivateMethods.h */ = {
 		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
 		name = "DMManager-PrivateMethods.h";
 		path = "/Users/snow/Documents/Xcode/ZFS-DUModule/Classes/class-dump/DiskManagement/DMManager-PrivateMethods.h";
 		sourceTree = "<absolute>";
@@ -922,11 +1261,6 @@
 		name = DMFilesystem.h;
 		path = "/Users/snow/Documents/Xcode/ZFS-DUModule/Classes/class-dump/DiskManagement/DMFilesystem.h";
 		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1321, 858}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{222, 1086}";
-		};
 	};
 	807FAF12111CE4B800AFBEE0 /* DUErase.m */ = {
 		isa = PBXFileReference;
@@ -934,11 +1268,6 @@
 		name = DUErase.m;
 		path = "/Users/snow/Documents/Xcode/ZFS-DUModule/Classes/class-dump/Erase/DUErase.m";
 		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {2504, 24856}}";
-			sepNavSelRange = "{27980, 8}";
-			sepNavVisRange = "{27880, 200}";
-		};
 	};
 	807FAF19111CE4D500AFBEE0 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -1009,227 +1338,6 @@
 		rType = 0;
 		vrLen = 1673;
 		vrLoc = 1091;
-	};
-	807FAF6C111CE7D800AFBEE0 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 809A71B010D1B94C00BD2AF7 /* DUZFS.h */;
-		name = "DUZFS.h: 27";
-		rLen = 0;
-		rLoc = 652;
-		rType = 0;
-		vrLen = 594;
-		vrLoc = 291;
-	};
-	807FB035111D01B600AFBEE0 /* XDModelBookmark */ = {
-		isa = XDModelBookmark;
-		fRef = 802763D11116266300242115 /* CoreZFS.xcdatamodel */;
-		fallbackIsa = PBXBookmark;
-		uiCtxt = {
-			UIContextForDetailArea = {
-				_indexOfSelectedPane = 0;
-				_indexOfSelectedView = 1;
-			};
-			UIContextForEntityArea = {
-				_indexOfSelectedView = 0;
-				chosenTableColumnns = (
-					"ET Entity",
-					"ET Abstract",
-					"ET Class",
-				);
-				chosenTableColumnns_sortDirections = (
-					NO,
-					YES,
-				);
-				chosenTableColumnns_sortKeys = (
-					entityClassName,
-					name,
-				);
-				chosenTableColumnns_sortSelectors = (
-					"_xdcaseInsensitiveNumericCompare:",
-					"_xdcaseInsensitiveNumericCompare:",
-				);
-				chosenTableWidths = (
-					103.000000,
-					22.000000,
-					159.080078,
-				);
-			};
-			UIContextForLayoutManager = {
-				detailSplitGeometry = {
-					_collapsingFrameDimension = 0;
-					_indexOfCollapsedView = 0;
-					_percentageOfCollapsedView = 0;
-					isCollapsed = yes;
-					sizes = (
-						"{{0, 0}, {647, 218}}",
-						"{{652, 0}, {287, 218}}",
-					);
-				};
-				diagramSplitGeometry = {
-					_collapsingFrameDimension = 0;
-					_indexOfCollapsedView = 0;
-					_percentageOfCollapsedView = 0;
-					isCollapsed = yes;
-					sizes = (
-						"{{0, 0}, {939, 220}}",
-						"{{0, 225}, {939, 122}}",
-					);
-				};
-				tableSplitGeometry = {
-					_collapsingFrameDimension = 0;
-					_indexOfCollapsedView = 0;
-					_percentageOfCollapsedView = 0;
-					isCollapsed = yes;
-					sizes = (
-						"{{0, 0}, {309, 218}}",
-						"{{314, 0}, {333, 218}}",
-					);
-				};
-			};
-			UIContextForPropertyArea = {
-				_indexOfSelectedView = 0;
-				chosenTableColumnnFRTs = (
-					"FT Fetch Request",
-					"FT Predicate",
-				);
-				chosenTableColumnnFRTs_sortDirections = (
-					YES,
-				);
-				chosenTableColumnnFRTs_sortKeys = (
-					name,
-				);
-				chosenTableColumnnFRTs_sortSelectors = (
-					"_xdcaseInsensitiveNumericCompare:",
-				);
-				chosenTableColumnnsAT = (
-					"AT Attribute",
-					"AT Type",
-				);
-				chosenTableColumnnsAT_sortDirections = (
-					YES,
-				);
-				chosenTableColumnnsAT_sortKeys = (
-					name,
-				);
-				chosenTableColumnnsAT_sortSelectors = (
-					"_xdcaseInsensitiveNumericCompare:",
-				);
-				chosenTableColumnnsFPT = (
-					"FP FetchedProperty",
-					"FP Destination",
-					"FP Predicate",
-				);
-				chosenTableColumnnsFPT_sortDirections = (
-					YES,
-				);
-				chosenTableColumnnsFPT_sortKeys = (
-					name,
-				);
-				chosenTableColumnnsFPT_sortSelectors = (
-					"_xdcaseInsensitiveNumericCompare:",
-				);
-				chosenTableColumnnsPT = (
-					"PT Property",
-					"PT Kind",
-					"PT SharedKeyOne",
-				);
-				chosenTableColumnnsPT_sortDirections = (
-					NO,
-					YES,
-				);
-				chosenTableColumnnsPT_sortKeys = (
-					name,
-					sharedKeyOne.name,
-				);
-				chosenTableColumnnsPT_sortSelectors = (
-					"_xdcaseInsensitiveNumericCompare:",
-					"compare:",
-				);
-				chosenTableColumnnsRT = (
-					"RT Relationship",
-					"RT Destination",
-				);
-				chosenTableColumnnsRT_sortDirections = (
-					YES,
-				);
-				chosenTableColumnnsRT_sortKeys = (
-					name,
-				);
-				chosenTableColumnnsRT_sortSelectors = (
-					"_xdcaseInsensitiveNumericCompare:",
-				);
-				chosenTableWidthsAT = (
-					128.000000,
-					64.000000,
-				);
-				chosenTableWidthsFPT = (
-					128.000000,
-					64.000000,
-					144.764160,
-				);
-				chosenTableWidthsFRT = (
-					128.000000,
-					249.764160,
-				);
-				chosenTableWidthsPT = (
-					128.000000,
-					108.110840,
-					96.570801,
-				);
-				chosenTableWidthsRT = (
-					128.000000,
-					64.000000,
-				);
-			};
-			"xdesign model browser state key - shown/hidden" = 1;
-			"xdesign model diagram view visible rect key" = "{{-138, 71}, {924, 107}}";
-			"xdesign model selected entities key" = (
-				"<XDPMEntity: 0x2018c4920>{name=Outline, package=}",
-			);
-			"xdesign model selected properties key" = (
-				"<XDPMAttribute: 0x201963a00>{name=name, type=(null)}",
-			);
-		};
-	};
-	807FB036111D01B600AFBEE0 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 8093BEEF111A23FF005AC76A /* No.m */;
-		name = "No.m: 274";
-		rLen = 0;
-		rLoc = 11836;
-		rType = 0;
-		vrLen = 899;
-		vrLoc = 11040;
-	};
-	807FB037111D01B600AFBEE0 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 8057C97610D9D81B00DBFBFD /* ZStatus.m */;
-		name = "ZStatus.m: 179";
-		rLen = 0;
-		rLoc = 5531;
-		rType = 0;
-		vrLen = 1125;
-		vrLoc = 5532;
-	};
-	807FB038111D01B600AFBEE0 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 809A71B110D1B94C00BD2AF7 /* DUZFS.m */;
-		name = "DUZFS.m: 70";
-		rLen = 0;
-		rLoc = 2310;
-		rType = 0;
-		vrLen = 797;
-		vrLoc = 1912;
-	};
-	807FB039111D01B600AFBEE0 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 809A71B110D1B94C00BD2AF7 /* DUZFS.m */;
-		name = "DUZFS.m: 644";
-		rLen = 0;
-		rLoc = 23293;
-		rType = 0;
-		vrLen = 1100;
-		vrLoc = 23049;
 	};
 	809205471119462A00732189 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -1303,36 +1411,6 @@
 		rLoc = 157;
 		rType = 0;
 		vrLen = 850;
-		vrLoc = 0;
-	};
-	809205581119462A00732189 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 80924EA010CF353500ED60B6 /* DUContextualMenus-private.h */;
-		name = "DUContextualMenus-private.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 764;
-		vrLoc = 0;
-	};
-	8092055A1119462A00732189 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 80924EA510CF353500ED60B6 /* DUDisk-LVMExtended.h */;
-		name = "DUDisk-LVMExtended.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 330;
-		vrLoc = 0;
-	};
-	8092055B1119462A00732189 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 80924EA110CF353500ED60B6 /* DUContextualMenus.h */;
-		name = "DUContextualMenus.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 511;
 		vrLoc = 0;
 	};
 	8092055C1119462A00732189 /* PBXTextBookmark */ = {
@@ -1431,16 +1509,11 @@
 		name = DUDiskController.h;
 		path = "/Users/snow/Documents/Xcode/ZFS-DUModule/Classes/class-dump/DUSupport/DUDiskController.h";
 		sourceTree = "<absolute>";
-	};
-	809206651119512700732189 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 80924EB810CF353500ED60B6 /* DUModule.h */;
-		name = "DUModule.h: 44";
-		rLen = 19;
-		rLoc = 931;
-		rType = 0;
-		vrLen = 1011;
-		vrLoc = 1213;
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {880, 1807}}";
+			sepNavSelRange = "{1676, 17}";
+			sepNavVisRange = "{1191, 756}";
+		};
 	};
 	809206661119512700732189 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -1488,7 +1561,7 @@
 	};
 	80924E9C10CF353500ED60B6 /* DUBaseDiskListViewController-SelfTest.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {880, 348}}";
+			sepNavIntBoundsRect = "{{0, 0}, {880, 297}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 341}";
 		};
@@ -1503,8 +1576,8 @@
 	80924E9E10CF353500ED60B6 /* DUBaseWindowController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {880, 806}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{848, 982}";
+			sepNavSelRange = "{1742, 10}";
+			sepNavVisRange = "{141, 663}";
 		};
 	};
 	80924E9F10CF353500ED60B6 /* DUBrowserCell.h */ = {
@@ -1516,56 +1589,56 @@
 	};
 	80924EA010CF353500ED60B6 /* DUContextualMenus-private.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {880, 368}}";
+			sepNavIntBoundsRect = "{{0, 0}, {880, 315}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 764}";
 		};
 	};
 	80924EA110CF353500ED60B6 /* DUContextualMenus.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {880, 368}}";
+			sepNavIntBoundsRect = "{{0, 0}, {880, 351}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 511}";
+			sepNavVisRange = "{3, 502}";
 		};
 	};
 	80924EA210CF353500ED60B6 /* DUDisk-DiskImageObjectMethods.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {978, 348}}";
+			sepNavIntBoundsRect = "{{0, 0}, {978, 297}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 750}";
 		};
 	};
 	80924EA310CF353500ED60B6 /* DUDisk-DMDisk.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {880, 1560}}";
+			sepNavIntBoundsRect = "{{0, 0}, {880, 1482}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{50, 614}";
+			sepNavVisRange = "{2240, 576}";
 		};
 	};
 	80924EA410CF353500ED60B6 /* DUDisk-DMDiskExtended.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {880, 741}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{724, 674}";
+			sepNavVisRange = "{141, 549}";
 		};
 	};
 	80924EA510CF353500ED60B6 /* DUDisk-LVMExtended.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {880, 368}}";
+			sepNavIntBoundsRect = "{{0, 0}, {880, 297}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 330}";
 		};
 	};
 	80924EA610CF353500ED60B6 /* DUDisk.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {880, 1794}}";
+			sepNavIntBoundsRect = "{{0, 0}, {880, 1599}}";
 			sepNavSelRange = "{2574, 0}";
-			sepNavVisRange = "{1050, 786}";
+			sepNavVisRange = "{1221, 615}";
 		};
 	};
 	80924EA710CF353500ED60B6 /* DUDiskController-DMManager.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {880, 348}}";
+			sepNavIntBoundsRect = "{{0, 0}, {880, 297}}";
 			sepNavSelRange = "{351, 88}";
 			sepNavVisRange = "{0, 773}";
 		};
@@ -1685,8 +1758,8 @@
 	80924EB810CF353500ED60B6 /* DUModule.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {880, 1092}}";
-			sepNavSelRange = "{931, 19}";
-			sepNavVisRange = "{1213, 1011}";
+			sepNavSelRange = "{1655, 0}";
+			sepNavVisRange = "{1054, 784}";
 			sepNavWindowFrame = "{{192, -77}, {911, 727}}";
 		};
 	};
@@ -1955,21 +2028,11 @@
 	};
 	8093BEEF111A23FF005AC76A /* No.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1405, 3783}}";
-			sepNavSelRange = "{11836, 0}";
-			sepNavVisRange = "{11040, 899}";
+			sepNavIntBoundsRect = "{{0, 0}, {880, 3822}}";
+			sepNavSelRange = "{43, 0}";
+			sepNavVisRange = "{0, 432}";
 			sepNavWindowFrame = "{{15, 51}, {911, 727}}";
 		};
-	};
-	8093BF30111A2818005AC76A /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 8093BEEE111A23FF005AC76A /* No.h */;
-		name = "No.h: 11";
-		rLen = 0;
-		rLoc = 160;
-		rType = 0;
-		vrLen = 399;
-		vrLoc = 0;
 	};
 	809A713F10D1B58400BD2AF7 /* DUInfo.h */ = {
 		isa = PBXFileReference;
@@ -1984,11 +2047,6 @@
 		name = DUErase.h;
 		path = "/Users/snow/Documents/Xcode/class-dump/Erase/DUErase.h";
 		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1216, 2197}}";
-			sepNavSelRange = "{1742, 15}";
-			sepNavVisRange = "{1300, 736}";
-		};
 	};
 	809A717610D1B86D00BD2AF7 /* NSObject-Protocol.h */ = {
 		isa = PBXFileReference;
@@ -1999,18 +2057,18 @@
 	};
 	809A71B010D1B94C00BD2AF7 /* DUZFS.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {880, 1378}}";
-			sepNavSelRange = "{652, 0}";
-			sepNavVisRange = "{291, 594}";
+			sepNavIntBoundsRect = "{{0, 0}, {880, 1443}}";
+			sepNavSelRange = "{534, 0}";
+			sepNavVisRange = "{111, 562}";
 			sepNavWindowFrame = "{{15, 51}, {911, 727}}";
 		};
 	};
 	809A71B110D1B94C00BD2AF7 /* DUZFS.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1272, 8710}}";
-			sepNavSelRange = "{2308, 0}";
-			sepNavVisRange = "{1822, 681}";
-			sepNavWindowFrame = "{{17, 51}, {911, 727}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1412, 8905}}";
+			sepNavSelRange = "{1731, 0}";
+			sepNavVisRange = "{791, 1519}";
+			sepNavWindowFrame = "{{17, 52}, {911, 726}}";
 		};
 	};
 	809A723110D1BE7600BD2AF7 /* PBXTextBookmark */ = {
@@ -2046,7 +2104,7 @@
 		executableSystemSymbolLevel = 0;
 		executableUserSymbolLevel = 0;
 		launchableReference = 809A724910D1BFF100BD2AF7 /* Disk Utility.app */;
-		libgmallocEnabled = 0;
+		libgmallocEnabled = 1;
 		name = "Disk Utility";
 		savedGlobals = {
 		};
@@ -2103,9 +2161,9 @@
 		hitCount = 0;
 		ignoreCount = 0;
 		lineNumber = 41;
-		modificationTime = 286679981.436781;
+		modificationTime = 287988620.106128;
 		originalNumberOfMultipleMatches = 1;
-		state = 1;
+		state = 0;
 	};
 	809A9EC110FFE10E007E0286 /* DUBaseDiskListViewController.h */ = {
 		isa = PBXFileReference;
@@ -2113,6 +2171,11 @@
 		name = DUBaseDiskListViewController.h;
 		path = "/Users/snow/Documents/Xcode/ZFS-DUModule/Classes/class-dump/DUSupport/DUBaseDiskListViewController.h";
 		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1048, 962}}";
+			sepNavSelRange = "{2287, 0}";
+			sepNavVisRange = "{163, 668}";
+		};
 	};
 	809A9F3410FFF39B007E0286 /* DURAIDDiskTableView.h */ = {
 		isa = PBXFileReference;
@@ -2182,6 +2245,13 @@
 		vrLen = 546;
 		vrLoc = 3525;
 	};
+	809D95C21120CC3F00CE1D10 /* dsa_pub.pem */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {880, 297}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1178}";
+		};
+	};
 	80A4E92610D6BCA2003F304D /* NSBundle.h */ = {
 		isa = PBXFileReference;
 		lastKnownFileType = sourcecode.c.h;
@@ -2199,6 +2269,10 @@
 		vrLen = 835;
 		vrLoc = 0;
 	};
+	80A8C653111F9CF000CBFF8D /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 800E479710D6E8EE00AD9898 /* VolumeIcon.icns */;
+	};
 	80A9DA7C111A56B800B7BF1C /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 32DBCF630370AF2F00C91783 /* ZFS_Prefix.pch */;
@@ -2209,16 +2283,6 @@
 		vrLen = 156;
 		vrLoc = 0;
 	};
-	80AF3146111A1F46009F9C96 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 80924EA610CF353500ED60B6 /* DUDisk.h */;
-		name = "DUDisk.h: 94";
-		rLen = 0;
-		rLoc = 2574;
-		rType = 0;
-		vrLen = 786;
-		vrLoc = 1050;
-	};
 	80AF3149111A1F46009F9C96 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 80924EAA10CF353500ED60B6 /* DUDiskController-SelfTest.h */;
@@ -2228,16 +2292,6 @@
 		rType = 0;
 		vrLen = 259;
 		vrLoc = 0;
-	};
-	80AF314B111A1F46009F9C96 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 8092064A11194CB100732189 /* DUDiskController.h */;
-		name = "DUDiskController.h: 67";
-		rLen = 26;
-		rLoc = 2006;
-		rType = 0;
-		vrLen = 1088;
-		vrLoc = 1384;
 	};
 	80B2E32510E942D900BB7A12 /* Zudo.m */ = {
 		isa = PBXFileReference;
@@ -2263,11 +2317,6 @@
 		name = DUErase.m;
 		path = "/Users/snow/Documents/Xcode/class-dump/Erase/DUErase.m";
 		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {2672, 25025}}";
-			sepNavSelRange = "{2582, 5}";
-			sepNavVisRange = "{1091, 1673}";
-		};
 	};
 	80C208161100EAB700CFBAD4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -2279,17 +2328,6 @@
 		vrLen = 458;
 		vrLoc = 137;
 	};
-	80C58F5011191D10000A0FCE /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D5B49B7048680CD000E48DA /* Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = "/Users/snow/Documents/Xcode/ZFS-DUModule/Info.plist";
-		rLen = 0;
-		rLoc = 9223372036854775808;
-	};
 	80CA0CA310D3046200DEB1F1 /* DUPartition.h */ = {
 		isa = PBXFileReference;
 		lastKnownFileType = sourcecode.c.h;
@@ -2299,10 +2337,31 @@
 	};
 	80CA0CBF10D3064C00DEB1F1 /* DMAsyncDelegate-Protocol.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {880, 348}}";
+			sepNavIntBoundsRect = "{{0, 0}, {880, 297}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 536}";
 		};
+	};
+	80D5DCC9113C67D30054E2F9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 80924EA010CF353500ED60B6 /* DUContextualMenus-private.h */;
+		name = "DUContextualMenus-private.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 764;
+		vrLoc = 0;
+	};
+	80D7FA0B113B952600B67103 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 806512EA1107F36C00DFBEEB /* zfs.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/snow/Documents/Xcode/ZFS-DUModule/zfs.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
 	};
 	80EDFE6B10D355CF00D22595 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -2353,7 +2412,7 @@
 	};
 	8D5B49B7048680CD000E48DA /* Info.plist */ = {
 		uiCtxt = {
-			sepNavWindowFrame = "{{15, 49}, {911, 727}}";
+			sepNavWindowFrame = "{{15, 52}, {911, 726}}";
 		};
 	};
 }
