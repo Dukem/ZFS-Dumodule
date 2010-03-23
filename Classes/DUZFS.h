@@ -19,6 +19,9 @@
 #import "DUDiskController-DUPrivate.h"
 #import "DUNamer.h"
 #import "DUDisk.h"
+#import "DUProgressWindowController.h"
+#import "DUBaseWindowController.h"
+#import "ProgressViewController.h"
 
 #include "ZFSSparkle.h"
 #include "ZStatus.h"

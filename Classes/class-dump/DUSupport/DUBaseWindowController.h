@@ -4,7 +4,7 @@
  *     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2009 by Steve Nygard.
  */
 
-#import "NSWindowController.h"
+#import <AppKit/NSWindowController.h>
 
 #import "DUWindowControllerProtocol-Protocol.h"
 

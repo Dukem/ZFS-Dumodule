@@ -98,15 +98,16 @@
 #pragma mark Scrub
 - (IBAction)scrubZpool:(id)sender
 {
+	if([[DUZFS alloc] scrubZPool:[self selection]])
+	{
 	[scrubText setStringValue:@"Retrieving Scrub Status..."];
-	[[DUZFS alloc] scrubZPool:[self selection]];
 	[scrubPanel makeKeyAndOrderFront:self];
 	[scrubArray addObject:[self selection]];
 	[scrubButton setEnabled:NO];
 	[scrubClose setEnabled:NO];
 	[scrubClose setTransparent:YES];
 	
-				Time = [ [NSTimer scheduledTimerWithTimeInterval: (5)
+				Time = [ [NSTimer scheduledTimerWithTimeInterval: (1)
 													  target:self
 													selector:@selector(scrubStatus)	//go to this method whenever the time comes
 													userInfo:nil
@@ -115,6 +116,7 @@
 	NSUserDefaults *spin = [NSUserDefaults standardUserDefaults];
 	[spin setBool:1 forKey:@"Async"];
 	[spin setBool:0 forKey:@"UIEnabled"];
+	}
 }
 - (IBAction)scrubStatusAction:(id)sender
 {
@@ -146,7 +148,7 @@
 
 }
 
-- (IBAction)stopScrub:(NSString *)zpool
+- (IBAction)stopScrub:(id)sender
 {
 	NSString *string = [[DUZFS alloc] ZFSCommand:[NSArray arrayWithObjects:@"/usr/sbin/zpool", @"status", [self selection], nil] :self];
 	NSRange range = [string rangeOfString:@"scrub: "];
@@ -244,7 +246,7 @@
 	NSRange zrange = NSMakeRange(0, ([ZDrives count]));
 	[zArrayController insertObjects:ZPirates atArrangedObjectIndexes:[NSIndexSet indexSetWithIndexesInRange:zrange]];
 
-
+	[self zfsOptionsList];
 }
 #pragma mark Kext
 - (BOOL)kextCheck
@@ -297,7 +299,7 @@
 #pragma mark Other
 - (void)awakeFromNib 
 {
-	
+	[[NSUserDefaults standardUserDefaults] setBool:0 forKey:@"Async"];
 //	kextIB = TRUE;
 
 //  Initial views
@@ -357,7 +359,6 @@
 		
 		}
 	[self zfsOptionsList];
-	NSLog(@"1");
 	[self kextCheck];
 }
 - (IBAction)zlistUpdate:(id)sender
@@ -388,13 +389,17 @@
 	}
 */	
 //	D F H v E
+	
 	NSArray *Drives = [[ZList titleOfSelectedItem] componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 	NSString *CurrentDrive;
 	CurrentDrive = [Drives objectAtIndex:0];
+if (CurrentDrive != nil) 
+{
+	
 
 	NSMutableArray *CurrentValues = [[NSMutableArray alloc] init];
 	id v;
-	NSMutableDictionary *variable = [[NSMutableDictionary alloc] init];
+	NSMutableDictionary *variables = [[NSMutableDictionary alloc] initWithCapacity:0];
 		NSEnumerator *key = [zfs keyEnumerator];
 		while (value = [key nextObject]) 
 		{
@@ -403,12 +408,12 @@
 			[string insertString:value atIndex:0];
 			NSString *Q = [[DUZFS alloc] ZFSCommand:[NSArray arrayWithObjects:@"/usr/sbin/zfs", @"get", @"-H", value, CurrentDrive, nil] :self];
 			NSArray *array = [Q componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-			[variable setValue:[array objectAtIndex:2] forKey:value];
+			[variables setValue:[array objectAtIndex:2] forKey:value];
 		}
 		while (O = [Enu nextObject]) 
 	{
 		value = [zfs objectForKey:O];
-		v = [variable objectForKey:O];
+		v = [variables objectForKey:O];
 		NSPopUpButton *C = [zfsMatrix cellAtRow:Integer column:Integi];
 		[C removeAllItems];
 		NSRange range = [value rangeOfString:v];
@@ -451,7 +456,7 @@
 			 Integi++;
 		 }
 	}
-	
+}
 	
 }
 - (IBAction)zfsOptionsApply:(id)sender

@@ -56,6 +56,8 @@
 		 return nil;
 	}
 	else {
+//[[DUProgressWindowController alloc] beginProgressWithMessage:@"Hello" withInformationText:@"Hello" allowCancel:0 cancelButtonTitle:nil allowSkip:0 skipButtonTitle:nil usingDelegate:self andCancelSelector:nil andSkipSelector:nil andContext:@"Hello"];
+
 		return self;
 	}
 
@@ -318,7 +320,7 @@ NSMutableDictionary *pirateBook = [Pirates objectAtIndex:([[collectionView selec
 
 
 }
-- (void)scrubZPool:(NSString *)zpool
+- (BOOL *)scrubZPool:(NSString *)zpool
 {	
 	NSMutableString *log = [[NSMutableString alloc] init];
 	[log setString:@"Scrubbing "];
@@ -328,7 +330,12 @@ NSMutableDictionary *pirateBook = [Pirates objectAtIndex:([[collectionView selec
 	char *string = [zpool UTF8String];
 	char *arghh[] = {"scrub", string, NULL};
 
-		[self authorizedTask:arghh tool:"/usr/sbin/zpool" array2:nil tool2:nil]; 
+	if(![self authorizedTask:arghh tool:"/usr/sbin/zpool" array2:nil tool2:nil])
+	{
+		return NO;	
+		
+	}
+
 
 }
 - (void)exportZPool:(NSString *)zpool

@@ -75,6 +75,7 @@
 - (IBAction)exportZpoolAction:(id)sender;
 - (IBAction)scrubZpool:(id)sender;
 - (IBAction)scrubStatusAction:(id)sender;
+- (IBAction)stopScrub:(id)sender;
 - (IBAction)zlistUpdate:(id)sender;
 - (BOOL)kextCheck;
 - (void)changeView:(NSView *)damn view:(NSView *)no view2:(NSView *)no2 mainView:(NSView *)cview;
