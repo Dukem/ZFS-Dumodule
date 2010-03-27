@@ -18,19 +18,19 @@
 #pragma mark IBActions
 - (IBAction)driveOptions:(id)sender
 {
-	[self changeView:currentview view:other view2:optionsOther mainView:view];
+	[self changeView:currentview view:V2 view2:optionsOther mainView:view];
 }
 - (IBAction)zfsOptions:(id)sender
 {
-	[self changeView:zfsCurrentView view:zother view2:zoptionsOther mainView:zview];
+	[self changeView:zfsCurrentView view:V2 view2:zoptionsOther mainView:zview];
 }
 - (IBAction)newDrive:(id)sender
 {
-	[self changeView:currentview view:other view2:otherOther mainView:view];
+	[self changeView:currentview view:V2 view2:otherOther mainView:view];
 }
 - (IBAction)znewDrive:(id)sender
 {
-	[self changeView:zfsCurrentView view:zother view2:zotherOther mainView:zview];
+	[self changeView:zfsCurrentView view:V2 view2:zotherOther mainView:zview];
 }
 - (IBAction)resetDrives:(id)sender
 {
@@ -100,21 +100,36 @@
 {
 	if([[DUZFS alloc] scrubZPool:[self selection]])
 	{
-	[scrubText setStringValue:@"Retrieving Scrub Status..."];
+/*	[scrubText setStringValue:@"Retrieving Scrub Status..."];
 	[scrubPanel makeKeyAndOrderFront:self];
 	[scrubArray addObject:[self selection]];
 	[scrubButton setEnabled:NO];
 	[scrubClose setEnabled:NO];
 	[scrubClose setTransparent:YES];
-	
+*/	
 				Time = [ [NSTimer scheduledTimerWithTimeInterval: (1)
 													  target:self
 													selector:@selector(scrubStatus)	//go to this method whenever the time comes
 													userInfo:nil
 												   repeats:YES] retain];
 		
+
+	DUProgress = [DUProgressWindowController alloc]; 
+	[[DUBaseWindowController alloc] setInterfaceLock];
+	[DUProgress setInterfaceLock];
+	[DUProgress setNeedsWarningOnQuit:1];
+	[DUProgress beginProgressWithMessage:@"Scrubbing ZPool" withInformationText:@"Retrieving Scrub Status..." allowCancel:1 cancelButtonTitle:@"Stop" allowSkip:0 skipButtonTitle:nil usingDelegate:self andCancelSelector:@selector(stopScrub) andSkipSelector:nil andContext:@"Hello"];
+	[DUProgress setGlobalProgressBarValue:0];
+/*	[no activateGlobalProgressText:1];
+	[no setGlobalProgressText:@"Scrub"];
+	[no startGlobalProgressBarAnimation:1];
+	[no setSecondaryProgressText:@"Scrubbing Zpool"];
+	[no setGlobalProgressBarValue:.5];
+	[no setGlobalPersistentMessageText:@"Scrub"];
+	[no endProgress];
+*/
 	NSUserDefaults *spin = [NSUserDefaults standardUserDefaults];
-	[spin setBool:1 forKey:@"Async"];
+	[zfsStatus startAnimation:self];
 	[spin setBool:0 forKey:@"UIEnabled"];
 	}
 }
@@ -130,24 +145,49 @@
 	NSRange range2 = [string rangeOfString:@"config:"];
 	NSString* substring = [string substringWithRange:NSMakeRange( (range.location + range.length), (range2.location - (range.location + range.length))) ];
 	
-	[scrubText setStringValue:substring];
+//	[scrubText setStringValue:substring];
+	[DUProgress setSecondaryProgressText:substring];
+
 	
 	NSRange range3 = [substring rangeOfString:@"scrub completed"];
 	if (range3.location != NSNotFound) 
 	{
-	[scrubButton setEnabled:YES];
+/*	[scrubButton setEnabled:YES];
 	[scrubClose setTransparent:NO];
 	[scrubClose setEnabled:YES];
 	[scrubStop setEnabled:NO];
+*/
+	[DUProgress setGlobalProgressBarValue:100];
+	[DUProgress stopGlobalProgressBarAnimation:1];
+	[DUProgress setGlobalPersistentAttributedMessageText:substring];
 	[Time invalidate];
 	NSUserDefaults *spin = [NSUserDefaults standardUserDefaults];
-	[spin setBool:0 forKey:@"Async"];
+	[zfsStatus stopAnimation:self];	
 	[spin setBool:1 forKey:@"UIEnabled"];
 		
 	}
 
 }
-
+- (void)stopScrub
+{
+	NSString *string = [[DUZFS alloc] ZFSCommand:[NSArray arrayWithObjects:@"/usr/sbin/zpool", @"status", [self selection], nil] :self];
+	NSRange range = [string rangeOfString:@"scrub: "];
+	NSRange range2 = [string rangeOfString:@"config:"];
+	NSString* substring = [string substringWithRange:NSMakeRange( (range.location + range.length), (range2.location - (range.location + range.length))) ];
+	
+	NSRange range3 = [substring rangeOfString:@"scrub completed"];
+	if (range3.location != NSNotFound) 
+	{
+	NSUserDefaults *spin = [NSUserDefaults standardUserDefaults];
+	[zfsStatus stopAnimation:self];	
+	[spin setBool:1 forKey:@"UIEnabled"];
+	}
+	else {
+		[[DUZFS alloc] ZFSCommand:[NSArray arrayWithObjects:@"/usr/sbin/zpool", @"scrub", @"-s", [scrubArray objectAtIndex:0], nil] :self];	
+	}
+	[DUProgress endProgress];
+}
+/*
 - (IBAction)stopScrub:(id)sender
 {
 	NSString *string = [[DUZFS alloc] ZFSCommand:[NSArray arrayWithObjects:@"/usr/sbin/zpool", @"status", [self selection], nil] :self];
@@ -166,6 +206,7 @@
 		[[DUZFS alloc] ZFSCommand:[NSArray arrayWithObjects:@"/usr/sbin/zpool", @"scrub", @"-s", [scrubArray objectAtIndex:0], nil] :self];	
 	}
 }
+ */
 #pragma mark ZPool
 - (NSString *)selection
 {
@@ -299,22 +340,15 @@
 #pragma mark Other
 - (void)awakeFromNib 
 {
-	[[NSUserDefaults standardUserDefaults] setBool:0 forKey:@"Async"];
 //	kextIB = TRUE;
 
 //  Initial views
-
-	[view addSubview:other];
-	[other setFrame:[view frame]];
-	[zview addSubview:zother];
-	[zother setFrame:[zview frame]];
-
+	[V addSubview:V2];
+	[V2 setFrame:[V frame]];
 
 	
-	currentview = other;
+	currentview = V2;
 	view = [other superview];
-	zfsCurrentView = zother;
-	zview = [zother superview];
 //	
     collection = [[[NSMutableArray alloc] initWithCapacity:0] retain];
     zcollection = [[[NSMutableArray alloc] initWithCapacity:0] retain];
@@ -439,6 +473,23 @@ if (CurrentDrive != nil)
 			 Integi++;
 		 }
 	}
+}
+else
+{
+	while (value = [Enu nextObject]) 
+	{
+		NSPopUpButton *C = [zfsMatrix cellAtRow:Integer column:Integi];
+		[C removeAllItems];
+		[C addItemWithTitle:@""];
+		Integer++;
+		 if (Integer == 11);
+		 {
+			 Integer = 0;
+			 Integi++;
+		 }
+	}
+	
+ }
 
 	
 	
@@ -456,8 +507,7 @@ if (CurrentDrive != nil)
 			 Integi++;
 		 }
 	}
-}
-	
+
 }
 - (IBAction)zfsOptionsApply:(id)sender
 {
@@ -615,7 +665,7 @@ if (CurrentDrive != nil)
 //  No = other/zother
 //  No2 = otherOther/zoptionsOther/zotherOther
 //  cview = view/zview
-
+/*
 	if (damn == no) {
 	headache = no2;
 	}
@@ -637,6 +687,20 @@ if (CurrentDrive != nil)
 	{
 		zfsCurrentView = headache;
 	}
+ */
+	if(currentview == V2)
+	{
+	[no2 setFrame:[V bounds]];
+	[[V animator] replaceSubview:V2 with:no2];
+	currentview = no2;
+	}
+	else 
+	{
+	[V2 setFrame:[V bounds]];
+	[[V animator] replaceSubview:currentview with:V2];
+	currentview = V2;
+	}
+	
 }
 @end
 

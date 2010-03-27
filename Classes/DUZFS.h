@@ -22,6 +22,7 @@
 #import "DUProgressWindowController.h"
 #import "DUBaseWindowController.h"
 #import "ProgressViewController.h"
+#import "DUBaseDiskListViewController.h"
 
 #include "ZFSSparkle.h"
 #include "ZStatus.h"

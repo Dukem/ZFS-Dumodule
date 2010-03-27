@@ -56,7 +56,12 @@
 		 return nil;
 	}
 	else {
-//[[DUProgressWindowController alloc] beginProgressWithMessage:@"Hello" withInformationText:@"Hello" allowCancel:0 cancelButtonTitle:nil allowSkip:0 skipButtonTitle:nil usingDelegate:self andCancelSelector:nil andSkipSelector:nil andContext:@"Hello"];
+//      [[DUProgressWindowController alloc] beginProgressWithMessage:@"Hello" withInformationText:@"Hello" allowCancel:0 cancelButtonTitle:nil allowSkip:0 skipButtonTitle:nil usingDelegate:self andCancelSelector:nil andSkipSelector:nil andContext:@"Hello"];
+//		[[DUDiskController sharedDiskController] updateMasterDiskListWithEveryDisk];	
+//		DUDisk *disk = [[DUDiskController sharedDiskController] createDUDiskObjectFromPath:@"/Users/snow/Downloads/EFI.iso"];
+//		[[DUDiskController sharedDiskController] updateMasterDiskListWithDisk:disk];
+//		[[DUDiskController sharedDiskController] updateMasterDiskListWithEveryDisk];
+//		[[DUDiskController sharedDiskController] mountDisk:disk includeChildren:1 synchronous:1];
 
 		return self;
 	}

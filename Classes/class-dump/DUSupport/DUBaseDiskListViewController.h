@@ -4,7 +4,7 @@
  *     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2009 by Steve Nygard.
  */
 
-#import "NSObject.h"
+#import <Foundation/NSObject.h>
 
 #import "DUOutlineControllerProtocol-Protocol.h"
 
@@ -14,7 +14,7 @@
 {
     NSScrollView *scroller;
     DUOutlineView *outlineView;
-    id <winControllerProtocol> winController;
+//    id <winControllerProtocol> winController;
     NSTableColumn *defaultColumn;
     DMManager *dm;
     DUDiskController *diskController;

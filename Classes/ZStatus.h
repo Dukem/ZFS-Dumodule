@@ -36,6 +36,8 @@
 	IBOutlet NSTextField *zpoolOptionsText;
 	IBOutlet NSTextField *sizeText;
 	IBOutlet NSTableView *newDiskTable;
+	IBOutlet NSView *V;
+	IBOutlet NSView *V2;
 	IBOutlet NSView *view;
 	IBOutlet NSView *other;
 	IBOutlet NSView *otherOther;
@@ -57,6 +59,7 @@
 	NSView *zfsCurrentView;
 	NSView *headache;
 	NSMatrix *zfsSettings;
+	DUProgressWindowController *DUProgress;
 	
 	id *options;
 	id *drives;
@@ -75,9 +78,9 @@
 - (IBAction)exportZpoolAction:(id)sender;
 - (IBAction)scrubZpool:(id)sender;
 - (IBAction)scrubStatusAction:(id)sender;
-- (IBAction)stopScrub:(id)sender;
 - (IBAction)zlistUpdate:(id)sender;
 - (BOOL)kextCheck;
+- (void)stopScrub;
 - (void)changeView:(NSView *)damn view:(NSView *)no view2:(NSView *)no2 mainView:(NSView *)cview;
 - (void)kextUI:(BOOL *)Answer;
 - (void)updateDrives;
