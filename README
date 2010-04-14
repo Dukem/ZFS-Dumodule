@@ -9,3 +9,5 @@
 */
 
 ZFS-DUModule is a Disk Utility plugin that allows you to work with ZFS.
+
+Due to 10.5 GUI incompatibility, ZFS-DUModule is only being developed for 10.6.
